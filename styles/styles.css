@@ -32,8 +32,6 @@ h3 {
 .advantages-content {
   width: 296px;
   height: 176px;
-  display: inline-block;
-  float: left;
   margin-bottom: 120px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -42,6 +40,5 @@ h3 {
 .advantages-img {
   width: 100px;
   height: 100px;
-  display: inline-block;
   margin: 0 auto 50px;
 }
