@@ -3,6 +3,7 @@
   box-sizing: border-box;
   background-color: #ffffff;
 }
+
 h3 {
   padding: 120px 0 20px;
   text-align: center;
@@ -10,6 +11,7 @@ h3 {
   font-size: 40px;
   color: #383838;
 }
+
 hr {
   width: 100px;
   height: 4px;
@@ -17,26 +19,32 @@ hr {
   border: none;
   background-color: #f5bd41;
 }
+
 .xl-container-advantages {
   width: 100%;
   height: 570px;
 }
+
 .xs-container-advantages {
   padding: 0 100px;
 }
+
 .flex-center-evenly {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .advantages-content {
   width: 296px;
   height: 176px;
   margin-bottom: 120px;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
   color: #383838;
 }
+
 .advantages-img {
   width: 100px;
   height: 100px;
