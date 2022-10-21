@@ -49,11 +49,11 @@ hr {
   justify-content: center;
 }
 
-.adv-icons {
+.icons-adv {
   max-width: 100px;
   max-height: 92px;
 }
 
-.adv-text {
-  text-align: center;
+.text-adv {
+  font-size: 24px;
 }
