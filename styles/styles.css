@@ -19,18 +19,19 @@ hr {
 }
 
 .xl-container-advantages {
-  width: 100%;
+  width: 1440px;
   height: 570px;
+  margin: 0 auto;
+  padding: 0 16px 0;
 }
 
 .xs-container-advantages {
   padding: 0 100px;
 }
 
-.flex-center-evenly {
+.flex-between {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .advantages-content {
@@ -56,4 +57,53 @@ hr {
 
 .text-adv {
   font-size: 24px;
+}
+
+.footer {
+  width: 1440px;
+  height: 625px;
+  margin: 0 auto;
+  padding: 120px 272px 0 104px;
+}
+
+.footer-background {
+  width: 100%;
+  background-color: #10367c;
+}
+
+.xs-footer {
+  margin-bottom: 64px;
+  height: 305px;
+}
+
+.footer-content {
+  color: #ffffff;
+  font-size: 20px;
+  width: 234px;
+}
+
+.footer-title {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.footer-list:first-child {
+  margin-top: 24px;
+}
+
+.footer-list:last-child {
+  margin-bottom: 0;
+}
+
+.copy {
+  width: 253px;
+  font-size: 14px;
 }
