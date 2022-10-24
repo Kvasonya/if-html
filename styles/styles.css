@@ -1,13 +1,12 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-h3 {
-  padding: 120px 0 20px;
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -18,42 +17,99 @@ hr {
   background-color: #f5bd41;
 }
 
-.xl-container-advantages {
-  width: 100%;
+.title {
+  padding: 120px 0 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+}
+
+.container-advantages {
+  max-width: 100%;
+  width: 1440px;
   height: 570px;
+  margin: 0 auto;
 }
 
-.xs-container-advantages {
-  padding: 0 100px;
+.content-advantages {
+  padding: 0 104px;
 }
 
-.flex-center-evenly {
+.flex-between {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.advantages-content {
+.advantage {
   width: 296px;
   height: 176px;
   margin-bottom: 120px;
   text-align: center;
 }
 
-.advantages-img {
+.advantages-images {
   max-width: 296px;
   height: 100px;
-  margin: 0 auto 50px;
+  margin: 0 auto 48px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
-.icons-adv {
+.advantages-icon {
   max-width: 100px;
   max-height: 92px;
 }
 
-.text-adv {
+.advantages-text {
+  font-weight: 400;
   font-size: 24px;
+  line-height: 28px;
+}
+
+.footer {
+  max-width: 100%;
+  width: 1440px;
+  height: 625px;
+  margin: 0 auto;
+  padding: 120px 270px 0 104px;
+}
+
+.footer-background {
+  width: 100%;
+  background-color: #10367c;
+}
+
+.footer-container {
+  margin-bottom: 62px;
+  height: 305px;
+}
+
+.footer-content {
+  color: #ffffff;
+  font-size: 20px;
+  width: 234px;
+}
+
+.footer-title {
+  font-weight: 500;
+  line-height: 23px;
+  padding: 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.copy {
+  width: 253px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
