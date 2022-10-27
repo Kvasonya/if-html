@@ -9,12 +9,187 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-hr {
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.underline {
+  width: 50px;
+}
+
+.divide {
   width: 100px;
-  height: 4px;
   margin: 0 auto 80px;
+}
+
+.line {
   border: none;
   background-color: #f5bd41;
+  height: 4px;
+}
+
+.top-section-background {
+  width: 100%;
+  background-image: url("../images/castelmezzano.png");
+  background-size: cover;
+}
+
+.top-section {
+  max-width: 100%;
+  width: 1440px;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 100%;
+  width: 1440px;
+  height: 95px;
+  padding: 0 104px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-options {
+  width: 200px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.header-option {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icons {
+  width: 94px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  min-width: 40px;
+  max-width: 135px;
+  min-height: 40px;
+  background: url("../images/sprite (night, account, markets.svg") no-repeat;
+  background-clip: padding-box;
+}
+
+.night .icon {
+  background-position: -43px -101px; /* вверх на 16px */
+  cursor: pointer;
+}
+
+.account .icon {
+  background-position: -85px -91px; /* по умолчанию */
+  cursor: pointer;
+  height: 50px;
+}
+
+.slogan {
+  width: 542px;
+  height: 118px;
+  margin: 196px 794px 100px 104px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.search-titles {
+  max-width: 640px;
+  margin-left: 128px;
+  margin-right: 672px;
+  gap: 221px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.search-line {
+  height: 64px;
+  margin: 24px 104px 120px 104px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.search-category {
+  height: 64px;
+  padding: 18px 0 19px 28px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+.search-category:first-child {
+  width: 467px;
+}
+
+.check-in {
+  width: 261px;
+  padding: 0 0 15px 22px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
+.rooms {
+  width: 314px;
+}
+
+.button {
+  width: 192px;
+  height: 64px;
+  background-color: #3077c6;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #10367c;
+}
+
+.market {
+  width: 270px;
+}
+
+.google-play .icon {
+  width: 135px;
+  background-position: -137px -91px;
+  cursor: pointer;
+}
+
+.app-store .icon {
+  width: 120px;
+  background-position: -284px -93px;
+  cursor: pointer;
 }
 
 .title {
@@ -35,11 +210,6 @@ hr {
 
 .content-advantages {
   padding: 0 104px;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 .advantage {
