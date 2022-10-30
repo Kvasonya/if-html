@@ -10,6 +10,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.base-container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -35,7 +41,7 @@ body {
   height: 4px;
 }
 
-.top-section-background {
+.top-section-bg {
   width: 100%;
   background-image: url("../images/castelmezzano.png");
   background-size: cover;
@@ -43,16 +49,11 @@ body {
 }
 
 .top-section {
-  max-width: 100%;
-  width: 1440px;
   min-height: 100vh;
-  margin: 0 auto;
   color: #ffffff;
 }
 
 .header {
-  max-width: 100%;
-  width: 1440px;
   height: 100px;
   padding: 0 104px 0;
   align-items: flex-end;
@@ -88,27 +89,28 @@ body {
   max-width: 135px;
   min-height: 40px;
   background: url("../images/sprite (night, account, markets.svg") no-repeat;
-  background-clip: padding-box;
+  cursor: pointer;
 }
 
 .night .icon {
   background-position: -43px -101px;
-  cursor: pointer;
 }
 
 .account .icon {
   background-position: -85px -91px;
-  cursor: pointer;
   height: 50px;
 }
 
 .slogan {
-  width: 542px;
-  height: 118px;
-  margin: 193px 794px 100px 104px;
+  margin: 131px 104px 104px;
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
+}
+
+.slogan::before {
+  content: "\a ";
+  white-space: pre;
 }
 
 .search-titles {
@@ -116,6 +118,9 @@ body {
   margin-left: 128px;
   margin-right: 672px;
   gap: 221px;
+}
+
+.search-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -123,7 +128,7 @@ body {
 
 .search-line {
   height: 64px;
-  margin: 24px 104px 120px 104px;
+  margin: 24px 104px 120px;
   display: flex;
   align-items: flex-end;
   background-color: #ffffff;
@@ -180,13 +185,11 @@ body {
 .google-play .icon {
   width: 135px;
   background-position: -137px -91px;
-  cursor: pointer;
 }
 
 .app-store .icon {
   width: 120px;
   background-position: -284px -93px;
-  cursor: pointer;
 }
 
 .title {
@@ -199,10 +202,7 @@ body {
 }
 
 .container-advantages {
-  max-width: 100%;
-  width: 1440px;
   height: 570px;
-  margin: 0 auto;
 }
 
 .content-advantages {
@@ -217,7 +217,6 @@ body {
 }
 
 .advantages-images {
-  max-width: 296px;
   height: 100px;
   margin: 0 auto 48px;
   align-items: center;
@@ -228,21 +227,24 @@ body {
   max-height: 92px;
 }
 
+.book {
+  padding-top: 13px;
+}
+
 .advantages-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  color: #383838;
 }
 
 .footer {
-  max-width: 100%;
-  width: 1440px;
   height: 625px;
   margin: 0 auto;
   padding: 120px 270px 0 104px;
 }
 
-.footer-background {
+.footer-bg {
   width: 100%;
   background-color: #10367c;
 }
