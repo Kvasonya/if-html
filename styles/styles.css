@@ -108,11 +108,6 @@ body {
   line-height: 59px;
 }
 
-.slogan::before {
-  content: "\a ";
-  white-space: pre;
-}
-
 .search-titles {
   max-width: 640px;
   margin-left: 128px;
