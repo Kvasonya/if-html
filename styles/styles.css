@@ -6,15 +6,185 @@
 }
 
 body {
+  max-height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 
-hr {
+.base-container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.underline {
+  width: 50px;
+}
+
+.divide {
   width: 100px;
-  height: 4px;
   margin: 0 auto 80px;
+}
+
+.line {
   border: none;
   background-color: #f5bd41;
+  height: 4px;
+}
+
+.top-section-bg {
+  width: 100%;
+  background-image: url("../images/castelmezzano.png");
+  background-size: cover;
+  position: relative;
+}
+
+.top-section {
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.header {
+  height: 100px;
+  padding: 0 104px 0;
+  align-items: flex-end;
+}
+
+.logo {
+  height: 51px;
+}
+
+.header-options {
+  width: 200px;
+  margin-right: 24px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header-option {
+  height: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-icons {
+  width: 94px;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.icon {
+  min-width: 40px;
+  max-width: 135px;
+  min-height: 40px;
+  background: url("../images/sprite (night, account, markets.svg") no-repeat;
+  cursor: pointer;
+}
+
+.night .icon {
+  background-position: -43px -101px;
+}
+
+.account .icon {
+  background-position: -85px -91px;
+  height: 50px;
+}
+
+.slogan {
+  margin: 131px 104px 104px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.search-titles {
+  max-width: 640px;
+  margin-left: 128px;
+  margin-right: 672px;
+  gap: 221px;
+}
+
+.search-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-line {
+  height: 64px;
+  margin: 24px 104px 120px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.search-category {
+  height: 64px;
+  padding: 18px 0 19px 28px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+.destination {
+  width: 467px;
+}
+
+.check-in {
+  width: 261px;
+  padding: 0 0 15px 22px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
+.rooms {
+  width: 314px;
+}
+
+.button {
+  width: 192px;
+  height: 64px;
+  background-color: #3077c6;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #10367c;
+}
+
+.market {
+  width: 270px;
+  margin-bottom: 120px;
+}
+
+.google-play .icon {
+  width: 135px;
+  background-position: -137px -91px;
+}
+
+.app-store .icon {
+  width: 120px;
+  background-position: -284px -93px;
 }
 
 .title {
@@ -27,19 +197,11 @@ hr {
 }
 
 .container-advantages {
-  max-width: 100%;
-  width: 1440px;
   height: 570px;
-  margin: 0 auto;
 }
 
 .content-advantages {
   padding: 0 104px;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 .advantage {
@@ -50,12 +212,9 @@ hr {
 }
 
 .advantages-images {
-  max-width: 296px;
   height: 100px;
   margin: 0 auto 48px;
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .advantages-icon {
@@ -63,21 +222,24 @@ hr {
   max-height: 92px;
 }
 
+.book {
+  padding-top: 13px;
+}
+
 .advantages-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  color: #383838;
 }
 
 .footer {
-  max-width: 100%;
-  width: 1440px;
   height: 625px;
   margin: 0 auto;
   padding: 120px 270px 0 104px;
 }
 
-.footer-background {
+.footer-bg {
   width: 100%;
   background-color: #10367c;
 }

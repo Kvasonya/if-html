@@ -4,17 +4,74 @@
     <meta charset="UTF-8" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="container-advantages">
+    <div class="top-section-bg">
+      <div class="top-section base-container">
+        <div class="header flex-between">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <div class="flex-between">
+            <div class="header-options flex-between">
+              <div class="header-option flex-between">
+                <span class="stays">Stays</span>
+                <hr class="underline line" />
+              </div>
+              <div class="header-option flex-between">
+                <span class="attractions">Attractions</span>
+              </div>
+            </div>
+            <div class="header-icons flex-between">
+              <div class="night">
+                <div class="icon"></div>
+              </div>
+              <div class="account">
+                <div class="icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="slogan">
+          Discover stays <br />
+          to live, work or just relax
+        </h2>
+        <div class="search-titles flex-between">
+          <h5 class="search-title">Your destination or hotel name</h5>
+          <h5 class="search-title">Check-in — Check-out</h5>
+        </div>
+        <div class="search-line">
+          <div class="search-category destination">New-York</div>
+          <div class="search-category check-in">Tue 15 Sept — Sat 19 Sept</div>
+          <div class="search-category rooms">
+            2 Adults — 0 Children — 1 Room
+          </div>
+          <button class="button" type="submit">
+            <span>Search</span>
+          </button>
+        </div>
+        <div class="flex-center">
+          <div class="market flex-between">
+            <div class="google-play">
+              <div class="icon"></div>
+            </div>
+            <div class="app-store">
+              <div class="icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-advantages base-container">
       <h3 class="title">What do we offer</h3>
-      <hr />
+      <hr class="divide line" />
       <div class="content-advantages flex-between">
         <div class="advantage">
-          <div class="advantages-images">
+          <div class="advantages-images flex-center">
             <img
               class="advantages-icon"
-              src="./images/support.png"
+              src="./images/support.svg"
               alt="Support 24/7"
             />
           </div>
@@ -24,7 +81,7 @@
           <div class="advantages-images">
             <img
               class="advantages-icon"
-              src="./images/communicate.png"
+              src="./images/communicate.svg"
               alt="Communicate directly"
             />
           </div>
@@ -32,7 +89,11 @@
         </div>
         <div class="advantage">
           <div class="advantages-images">
-            <img class="advantages-icon" src="./images/book.png" alt="Book online" />
+            <img
+              class="advantages-icon book"
+              src="./images/book.svg"
+              alt="Book online"
+            />
           </div>
           <span class="advantages-text">Book online</span>
         </div>
@@ -40,7 +101,7 @@
           <div class="advantages-images">
             <img
               class="advantages-icon"
-              src="./images/reviews.png"
+              src="./images/reviews.svg"
               alt="Real guest reviews"
             />
           </div>
@@ -48,8 +109,8 @@
         </div>
       </div>
     </div>
-    <div class="footer-background">
-      <div class="footer">
+    <div class="footer-bg">
+      <div class="footer base-container">
         <div class="footer-container flex-between">
           <div class="footer-content">
             <ul class="footer-title">
