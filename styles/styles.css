@@ -10,6 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .base-container {
   width: 1440px;
   max-width: 100%;
@@ -60,12 +67,13 @@ body {
 }
 
 .logo {
-  height: 51px;
+  height: 58px;
 }
 
 .header-options {
   width: 200px;
-  margin-right: 24px;
+  margin-right: 48px;
+  padding-top: 12px;
   align-items: center;
   font-weight: 400;
   font-size: 24px;
@@ -84,25 +92,31 @@ body {
   align-items: center;
 }
 
-.icon {
-  min-width: 40px;
-  max-width: 135px;
-  min-height: 40px;
-  background: url("../images/sprite (night, account, markets.svg") no-repeat;
-  cursor: pointer;
+.opt {
+  width: 342px;
+  display: flex;
 }
 
-.night .icon {
-  background-position: -43px -101px;
+.icons {
+  width: 94px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.account .icon {
-  background-position: -85px -91px;
-  height: 50px;
+.account {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.night {
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .slogan {
-  margin: 131px 104px 104px;
+  margin: 190px 104px 104px;
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
@@ -123,7 +137,7 @@ body {
 
 .search-line {
   height: 64px;
-  margin: 24px 104px 120px;
+  margin: 15px 104px 120px;
   display: flex;
   align-items: flex-end;
   background-color: #ffffff;
@@ -177,14 +191,14 @@ body {
   margin-bottom: 120px;
 }
 
-.google-play .icon {
-  width: 135px;
-  background-position: -137px -91px;
+.google-play {
+  max-width: 135px;
+  max-height: 40px;
 }
 
-.app-store .icon {
-  width: 120px;
-  background-position: -284px -93px;
+.app-store {
+  max-width: 117px;
+  max-height: 38px;
 }
 
 .title {
@@ -208,7 +222,9 @@ body {
   width: 296px;
   height: 176px;
   margin-bottom: 120px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages-images {
@@ -224,6 +240,10 @@ body {
 
 .book {
   padding-top: 13px;
+}
+
+.communicate {
+  padding-top: 8px;
 }
 
 .advantages-text {
