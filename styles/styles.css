@@ -8,6 +8,7 @@
 body {
   max-height: 100vh;
   font-family: "Roboto", sans-serif;
+  color: #ffffff;
 }
 
 .svg-sprite {
@@ -17,39 +18,38 @@ body {
   height: 0;
 }
 
-.base-container {
+.container {
   width: 1440px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.flex-center {
+._flex-center {
   display: flex;
   justify-content: center;
 }
 
-.flex-between {
+._flex-between {
   display: flex;
   justify-content: space-between;
 }
 
-.underline {
+.header-content__line {
   width: 50px;
 }
 
-.divide {
+.features__line {
   width: 100px;
   margin: 0 auto 80px;
 }
 
-.line {
+._yellow-line {
   border: none;
   background-color: #f5bd41;
   height: 4px;
 }
 
-.top-section-bg {
-  width: 100%;
+._bg-photo {
   background-image: url("../images/castelmezzano.png");
   background-size: cover;
   position: relative;
@@ -57,20 +57,28 @@ body {
 
 .top-section {
   min-height: 100vh;
-  color: #ffffff;
 }
 
 .header {
   height: 100px;
+}
+
+.header__container {
   padding: 0 104px 0;
   align-items: flex-end;
 }
 
-.logo {
-  height: 58px;
+.header__logo {
+  height: 70px;
+  width: 205px;
 }
 
-.header-options {
+.header__content {
+  width: 342px;
+  display: flex;
+}
+
+.header__content-container {
   width: 200px;
   margin-right: 48px;
   padding-top: 12px;
@@ -80,62 +88,49 @@ body {
   line-height: 28px;
 }
 
-.header-option {
+.header-content__item {
   height: 40px;
   flex-direction: column;
   align-items: center;
 }
 
-.header-icons {
-  width: 94px;
-  margin-left: 24px;
-  align-items: center;
-}
-
-.opt {
-  width: 342px;
-  display: flex;
-}
-
-.icons {
+.header-content__icons {
   width: 94px;
   height: 78px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.account {
+.header-icons__account {
   max-width: 40px;
   max-height: 40px;
 }
 
-.night {
+.header-icons__night-theme {
   max-width: 30px;
   max-height: 30px;
 }
 
-.slogan {
+.top-section__slogan {
   margin: 190px 104px 104px;
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
 }
 
-.search-titles {
+.top-section__search-form {
   max-width: 640px;
   margin-left: 128px;
   margin-right: 672px;
   gap: 221px;
 }
 
-.search-title {
+.search-form__title {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
-.search-line {
+.search-form__search-line {
   height: 64px;
   margin: 15px 104px 120px;
   display: flex;
@@ -144,7 +139,7 @@ body {
   border-radius: 8px;
 }
 
-.search-category {
+.search-line__item {
   height: 64px;
   padding: 18px 0 19px 28px;
   display: flex;
@@ -186,22 +181,22 @@ body {
   background-color: #10367c;
 }
 
-.market {
+.markets__items {
   width: 270px;
   margin-bottom: 120px;
 }
 
-.google-play {
+.markets-item__google-play {
   max-width: 135px;
   max-height: 40px;
 }
 
-.app-store {
+.markets-item__app-store {
   max-width: 117px;
   max-height: 38px;
 }
 
-.title {
+.site-title {
   padding: 120px 0 20px;
   text-align: center;
   font-weight: 500;
@@ -210,30 +205,25 @@ body {
   color: #383838;
 }
 
-.container-advantages {
+.features {
   height: 570px;
 }
 
-.content-advantages {
+.features__content {
   padding: 0 104px;
 }
 
-.advantage {
+.features-content__item {
   width: 296px;
   height: 176px;
   margin-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.advantages-images {
-  height: 100px;
-  margin: 0 auto 48px;
-  align-items: center;
-}
-
-.advantages-icon {
+.features-content__icon {
   max-width: 100px;
   max-height: 92px;
 }
@@ -246,7 +236,7 @@ body {
   padding-top: 8px;
 }
 
-.advantages-text {
+.features-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -255,42 +245,44 @@ body {
 
 .footer {
   height: 625px;
-  margin: 0 auto;
-  padding: 120px 270px 0 104px;
 }
 
-.footer-bg {
+._bg-blue {
   width: 100%;
   background-color: #10367c;
 }
 
-.footer-container {
-  margin-bottom: 62px;
-  height: 305px;
+.footer__container {
+  margin-bottom: 64px;
+  padding: 120px 270px 0 104px;
 }
 
-.footer-content {
-  color: #ffffff;
-  font-size: 20px;
+.footer__content {
   width: 234px;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.footer-title {
+.footer-content__title {
   font-weight: 500;
   line-height: 23px;
   padding: 0;
 }
 
-.footer-list {
+.footer-content__list {
   list-style: none;
-  padding: 0;
   margin-top: 24px;
+  padding: 0;
   font-weight: 400;
   line-height: 23px;
 }
 
-.copy {
+.footer-content__copy {
   width: 253px;
+  margin-top: 158px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
