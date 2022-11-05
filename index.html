@@ -179,16 +179,16 @@
             <use href="#logo" />
           </svg>
           <div class="header__menu _flex-between">
-              <div class="header-menu__item _flex-between">Stays</div>
-              <div class="header-menu__item _flex-between">Attractions</div>
-              <div class="header__icons _flex-between">
-                <svg class="header-icons__night-theme">
-                  <use href="#night" />
-                </svg>
-                <svg class="header-icons__account">
-                  <use href="#account" />
-                </svg>
-              </div>
+            <div class="header-menu__item _flex-between">Stays</div>
+            <div class="header-menu__item _flex-between">Attractions</div>
+            <div class="header__icons _flex-between">
+              <svg class="header-icons__night-theme">
+                <use href="#night" />
+              </svg>
+              <svg class="header-icons__account">
+                <use href="#account" />
+              </svg>
+            </div>
           </div>
         </div>
         <h2 class="top-section__slogan">
@@ -196,22 +196,30 @@
           to live, work or just relax
         </h2>
         <div class="top-section__search-form _flex-between">
-          <h5 class="search-form__title">Your destination or hotel name</h5>
-          <h5 class="search-form__title">Check-in — Check-out</h5>
+          <label for="search-destination" class="search-form__title">Your destination or hotel name</label>
+          <label for="check-in" class="search-form__title">Check-in — Check-out</label>
         </div>
         <div class="search-form__search-line">
-          <div class="search-line__item search-line-item__destination">
-            New-York
-          </div>
-          <div class="search-line__item search-line-item__check-in">
-            Tue 15 Sept — Sat 19 Sept
-          </div>
-          <div class="search-line__item search-line-item__rooms">
-            2 Adults — 0 Children — 1 Room
-          </div>
-          <button class="button search-form__button" type="submit">
-            Search
-          </button>
+          <form action="/" method="get" autocomplete="on">
+            <input class="search-line__item search-line-item__destination" type="search" id="search-destination" name="search-destination" placeholder="New-York" required>
+            <select class="search-line__item search-line-item__check-in" id="check-in" name="check-in" >
+              <option disabled selected>Tue 15 Sept — Sat 19 Sept</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <label for="rooms"></label>
+            <select class="search-line__item search-line-item__rooms" id="rooms" name="rooms" >
+              <option disabled selected>2 Adults — 0 Children — 1 Room</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button class="button search-form__button" type="submit">
+              <span>Search</span>
+            </button>
+
+          </form>
         </div>
         <div class="markets _flex-center">
           <div class="markets__items _flex-between">
