@@ -6,9 +6,13 @@
 }
 
 body {
-  max-height: 100vh;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
 }
 
 .svg-sprite {
@@ -16,6 +20,13 @@ body {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+.site-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
 }
 
 .container {
@@ -45,7 +56,7 @@ body {
   background-color: #10367c;
 }
 
-.top-section {
+.top-section__container {
   min-height: 100vh;
 }
 
@@ -60,28 +71,25 @@ body {
   width: 205px;
 }
 
-.header__content {
-  width: 342px;
-  display: flex;
-}
-
 .header__menu {
   width: 344px;
   height: 100px;
-  padding-top: 45px;
+  margin-bottom: -45px;
+  /*padding-top: 45px;*/
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
 }
 
-.header-menu__item {
+.header__menu-link {
   height: 40px;
   max-width: 118px;
   padding-top: 2px;
   flex-direction: column;
+  color: #ffffff;
 }
 
-.header-menu__item:first-child:after {
+.header__menu-link:first-child:after {
   display: block;
   width: 50px;
   content: "";
@@ -94,17 +102,16 @@ body {
   width: 94px;
   height: 78px;
   margin-left: 24px;
-  /*align-items: center;*/
 }
 
-.header-icons__account {
+.header__icons_account {
   max-width: 40px;
   max-height: 40px;
 }
 
-.header-icons__night-theme {
+.header__icons_night-theme {
   max-width: 30px;
-  max-height: 30px;
+  max-height: 34px;
 }
 
 .top-section__slogan {
@@ -114,76 +121,72 @@ body {
   line-height: 59px;
 }
 
-.top-section__search-form {
+.top-section__search-form-titles {
   max-width: 640px;
   margin-left: 128px;
   margin-right: 672px;
   gap: 221px;
 }
 
-.search-form__title {
+.top-section__search-form-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
-select {
+.top-section__search-form_bg {
+  height: 64px;
+  margin: 15px 104px 120px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: none;
+}
+
+._select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.search-form__search-line {
+.top-section__search-form {
   height: 64px;
-  margin: 15px 104px 120px;
-  /*display: flex;*/
-  /*align-items: flex-end;*/
-  background-color: #ffffff;
-  border-radius: 8px;
+  display: flex;
 }
 
-.search-line__item {
-  height: 64px;
-  padding: 18px 0 19px 28px;
-  display: flex;
-  align-items: flex-end;
+.top-section__search-form-item {
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #383838;
 }
 
-form { margin: 0; padding: 0;
-  font-size: 0;
-  border: none;
-  height: 64px;
-  display: flex;
-}
-
-.search-line__item {font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #383838;}
-
-.search-line-item__destination {
+.top-section__search-form-item_destination {
   width: 467px;
+  text-align: left;
+  padding-left: 25px;
   border: none;
   border-radius: 8px;
 }
 
-.search-line-item__check-in {
+.top-section__search-form-item_check-in {
   width: 261px;
-  /*padding: 0 0 15px 22px;*/
   border: 3px solid #f5bd41;
   border-radius: 8px;
 }
 
-.search-line-item__rooms {
+.top-section__search-form-item_rooms {
   width: 314px;
   border: none;
 }
 
-.search-form__button {
+.top-section__search-form-button {
   width: 192px;
   height: 64px;
   background-color: #3077c6;
@@ -199,32 +202,27 @@ form { margin: 0; padding: 0;
   background-color: #10367c;
 }
 
-.markets__items {
+.markets__container {
   width: 270px;
   margin-bottom: 120px;
 }
+.markets__item {
+  cursor: pointer;
+}
 
-.markets-items__google-play {
+.markets__item_google-play {
   max-width: 135px;
   max-height: 40px;
 }
 
-.markets-items__app-store {
+.markets__item_app-store {
   max-width: 117px;
   max-height: 38px;
 }
 
-.site-title {
+.features__title {
   padding: 120px 0 20px;
   text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  color: #383838;
-}
-
-.features {
-  height: 570px;
 }
 
 .features__title:after {
@@ -255,11 +253,11 @@ form { margin: 0; padding: 0;
   max-height: 92px;
 }
 
-.features-icon__book {
+.features__icon_book {
   padding-top: 13px;
 }
 
-.features-icon__communicate {
+.features__icon_communicate {
   padding-top: 8px;
 }
 

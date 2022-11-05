@@ -179,15 +179,18 @@
             <use href="#logo" />
           </svg>
           <div class="header__menu _flex-between">
-            <div class="header-menu__item _flex-between">Stays</div>
-            <div class="header-menu__item _flex-between">Attractions</div>
+            <a href="#" class="header__menu-link link _flex-between">Stays</a>
+            <a href="#" class="header__menu-link link _flex-between"
+              >Attractions</a
+            >
             <div class="header__icons _flex-between">
-              <svg class="header-icons__night-theme">
+              <svg class="header__icons_night-theme">
                 <use href="#night" />
               </svg>
-              <svg class="header-icons__account">
+              <svg class="header__icons_account">
                 <use href="#account" />
               </svg>
+              <!--              or <div class="header__icons> (container) ... <svg class "header__icon" (1 item)?-->
             </div>
           </div>
         </div>
@@ -195,38 +198,64 @@
           Discover stays <br />
           to live, work or just relax
         </h2>
-        <div class="top-section__search-form _flex-between">
-          <label for="search-destination" class="search-form__title">Your destination or hotel name</label>
-          <label for="check-in" class="search-form__title">Check-in — Check-out</label>
+        <div class="top-section__search-form-titles _flex-between">
+          <label for="search-destination" class="top-section__search-form-title"
+            >Your destination or hotel name</label
+          >
+          <label for="check-in" class="top-section__search-form-title"
+            >Check-in — Check-out</label
+          >
         </div>
-        <div class="search-form__search-line">
-          <form action="/" method="get" autocomplete="on">
-            <input class="search-line__item search-line-item__destination" type="search" id="search-destination" name="search-destination" placeholder="New-York" required>
-            <select class="search-line__item search-line-item__check-in" id="check-in" name="check-in" >
+        <div class="top-section__search-form_bg">
+          <form
+            class="top-section__search-form form"
+            action="/"
+            method="get"
+            autocomplete="on"
+          >
+            <input
+              class="top-section__search-form-item top-section__search-form-item_destination"
+              type="search"
+              id="search-destination"
+              name="search-destination"
+              placeholder="New-York"
+              required
+            />
+            <select
+              class="top-section__search-form-item top-section__search-form-item_check-in _select"
+              id="check-in"
+              name="check-in"
+            >
               <option disabled selected>Tue 15 Sept — Sat 19 Sept</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
             <label for="rooms"></label>
-            <select class="search-line__item search-line-item__rooms" id="rooms" name="rooms" >
+            <select
+              class="top-section__search-form-item top-section__search-form-item_rooms _select"
+              id="rooms"
+              name="rooms"
+            >
               <option disabled selected>2 Adults — 0 Children — 1 Room</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
-            <button class="button search-form__button" type="submit">
+            <button
+              class="button top-section__search-form-button"
+              type="submit"
+            >
               <span>Search</span>
             </button>
-
           </form>
         </div>
         <div class="markets _flex-center">
-          <div class="markets__items _flex-between">
-            <svg class="markets-items__google-play">
+          <div class="markets__container _flex-between">
+            <svg class="markets__item markets__item_google-play">
               <use href="#google-play" />
             </svg>
-            <svg class="markets-items__app-store">
+            <svg class="markets__item markets__item_app-store">
               <use href="#app-store" />
             </svg>
           </div>
@@ -237,28 +266,28 @@
       <h3 class="features__title site-title">What do we offer</h3>
       <div class="features__content _flex-between">
         <div class="features__item">
-          <svg class="features__icon">
+          <svg class="features__icon features__icon_support">
             <use href="#support" />
           </svg>
-          <span class="features__text">Support 24/7</span>
+          <p class="features__text">Support 24/7</p>
         </div>
         <div class="features__item">
-          <svg class="features__icon features-icon__communicate">
+          <svg class="features__icon features__icon_communicate">
             <use href="#communicate" />
           </svg>
-          <span class="features__text">Communicate directly</span>
+          <p class="features__text">Communicate directly</p>
         </div>
         <div class="features__item">
-          <svg class="features__icon features-icon__book">
+          <svg class="features__icon features__icon_book">
             <use href="#book" />
           </svg>
-          <span class="features__text">Book online</span>
+          <p class="features__text">Book online</p>
         </div>
         <div class="features__item">
-          <svg class="features__icon">
+          <svg class="features__icon features__icon_reviews">
             <use href="#reviews" />
           </svg>
-          <span class="features__text">Real guest reviews</span>
+          <p class="features__text">Real guest reviews</p>
         </div>
       </div>
     </div>
