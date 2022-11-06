@@ -238,7 +238,7 @@ body {
   padding: 0 104px;
 }
 
-.features__item {
+.features__content-item {
   width: 296px;
   height: 176px;
   margin-bottom: 120px;
@@ -248,20 +248,20 @@ body {
   justify-content: space-between;
 }
 
-.features__icon {
+.features__content-icon {
   max-width: 100px;
   max-height: 92px;
 }
 
-.features__icon_book {
+.features__content-icon_book {
   padding-top: 13px;
 }
 
-.features__icon_communicate {
+.features__content-icon_communicate {
   padding-top: 8px;
 }
 
-.features__text {
+.features__content-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
