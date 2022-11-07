@@ -75,7 +75,6 @@ body {
   width: 344px;
   height: 100px;
   margin-bottom: -45px;
-  /*padding-top: 45px;*/
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -107,11 +106,13 @@ body {
 .header__menu-icons_account {
   max-width: 40px;
   max-height: 40px;
+  cursor: pointer;
 }
 
 .header__menu-icons_night-theme {
   max-width: 30px;
   max-height: 34px;
+  cursor: pointer;
 }
 
 .top-section__slogan {
@@ -134,13 +135,6 @@ body {
   line-height: 21px;
 }
 
-.top-section__search-form_bg {
-  height: 64px;
-  margin: 15px 104px 120px;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
 .form {
   margin: 0;
   padding: 0;
@@ -157,6 +151,9 @@ body {
 .top-section__search-form {
   height: 64px;
   display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 15px 104px 120px;
 }
 
 .top-section__search-form-item {
@@ -165,6 +162,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #383838;
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .top-section__search-form-item_destination {
@@ -178,7 +177,6 @@ body {
 .top-section__search-form-item_check-in {
   width: 261px;
   border: 3px solid #f5bd41;
-  border-radius: 8px;
 }
 
 .top-section__search-form-item_rooms {
