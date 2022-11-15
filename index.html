@@ -223,22 +223,19 @@
         Discover stays <br />
         to live, work or just relax
       </h2>
-
       <div class="container top-section__form-container">
         <fieldset class="top-section__form-fieldset">
           <form class="top-section__form _top-section-grid" action="">
-
             <div class="top-section__form-item-group">
+              <div class="top-section__form-item">
               <label class="top-section__form-label _label-destination" for="search-destination">Your destination or hotel name</label>
               <div>
                 <svg class="top-section__form-icon">
                   <use href="#search"/>
                 </svg>
               </div>
-
-
               <input
-                class="top-section__form-item top-section__form-item-text _input _input-destination"
+                class="top-section__form-item-content top-section__form-item-text _input _input-destination"
                 type="search"
                 id="search-destination"
                 name="search-destination"
@@ -246,50 +243,66 @@
                 required
               />
             </div>
-
+            </div>
             <div class="top-section__form-item-group">
+              <div class="top-section__form-item">
               <label class="top-section__form-label _label-check-in" for="check-in">Check-in</label>
-              <select class="top-section__form-item top-section__form-item-text _select _select-check-in" id="check-in" name="check-in">
+              <select class="top-section__form-item-content top-section__form-item-text _select _select-check-in" id="check-in" name="check-in">
                 <option disabled selected>Tue 15 Sept</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
+              </div>
               <p class="top-section__form-item-text _blank">—</p>
 
+
+              <div class="top-section__form-item">
               <label class="top-section__form-label _label-check-out" for="check-out">Check-out</label>
-              <select class="top-section__form-item top-section__form-item-text _select _select-check-out" id="check-out" name="check-out">
+              <select class="top-section__form-item-content top-section__form-item-text _select _select-check-out" id="check-out" name="check-out">
                 <option disabled selected>Sat 19 Sept</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
+              </div>
+
             </div>
-
-
             <div class="top-section__form-item-group top-section__form-item-group_rooms">
+              <div class="top-section__form-item _form-item-adults">
 
-              <select class="top-section__form-item top-section__form-item-text _select _select-adults _text-left" id="adults" name="adults">
-                <option disabled selected>2</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <label class="top-section__form-label _label-adults" for="adults">Adults</label>
-              <select class="top-section__form-item top-section__form-item-text _select _select-children _text-left" id="children" name="children">
-                <option disabled selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <label class="top-section__form-label _label-children" for="children">Children</label>
-              <select class="top-section__form-item top-section__form-item-text _select _select-rooms _text-left" id="rooms" name="rooms">
-                <option disabled selected>1</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <label class="top-section__form-label _label-rooms" for="rooms">Rooms</label>
+                <select class="top-section__form-item-content top-section__form-item-text _select _select-adults _text-left" id="adults" name="adults">
+                  <option disabled selected>2</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label class="top-section__form-label _label-adults" for="adults">Adults</label>
+
+              </div>
+
+              <div class="top-section__form-item _form-item-children">
+
+                <select class="top-section__form-item-content top-section__form-item-text _select _select-children _text-left" id="children" name="children">
+                  <option disabled selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label class="top-section__form-label _label-children" for="children">Children</label>
+
+
+              </div>
+
+              <div class="top-section__form-item _form-item-rooms">
+                <select class="top-section__form-item-content top-section__form-item-text _select _select-rooms _text-left" id="rooms" name="rooms">
+                  <option disabled selected>1</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label class="top-section__form-label _label-rooms" for="rooms">Rooms</label>
+              </div>
 
             </div>
             <div class="top-section__form-item-group">
@@ -299,15 +312,10 @@
               >
                 <span class="top-section__form-button-text">Search</span>
               </button>
-
             </div>
-
-
           </form>
         </fieldset>
       </div>
-
-
 
 
       <!--        <div class="top-section__search-form-titles _flex-between col-lg-7">-->
@@ -521,7 +529,6 @@
 <!--          </button>-->
 <!--        </fieldset>-->
 <!--      </form>-->
-
       <div class="top-section__markets markets _flex-center">
         <div class="markets__container _flex-between">
           <svg class="markets__item markets__item_google-play">
@@ -540,19 +547,15 @@
     </div>
     <div class="features__content">
       <div class="features__content-item col-lg-3 col-md-6 col-xs-6" >
-
         <svg class="features__content-icon features__content-icon_support">
           <use href="#support" />
         </svg>
-
         <p class="features__content-text">Support 24/7</p>
       </div>
       <div class="features__content-item col-lg-3 col-md-6 col-xs-6" >
         <svg class="features__content-icon features__content-icon_communicate">
           <use href="#communicate" />
         </svg>
-
-
         <p class="features__content-text">Communicate directly</p>
       </div>
       <div class="features__content-item col-lg-3 col-md-6 col-xs-6" >
