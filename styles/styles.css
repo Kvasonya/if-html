@@ -231,9 +231,11 @@ body {
   border-radius: 4px;
 }
 
-.top-section__form-item-group:nth-child(3) > .top-section__form-item > ._select {
-  text-align: left;
-}
+/*.top-section__form-item-group:nth-child(3)*/
+/*  > .top-section__form-item*/
+/*  > ._select {*/
+/*  text-align: left;*/
+/*}*/
 
 .top-section__form-item {
   height: 100%;
@@ -358,13 +360,9 @@ body {
   line-height: 28px;
 }
 
-/*._text-left {*/
-/*  text-align: left;*/
-/*}*/
-
-/*._select:focus + label {*/
-/*  display: none;*/
-/*}*/
+._text-left {
+  text-align: left;
+}
 
 .markets__container {
   width: 270px;
@@ -500,7 +498,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 @media screen and (max-width: 1024px) {
   /*For tablets*/
   :root {
@@ -585,7 +582,7 @@ body {
   .header__menu-icons_menu {
     display: flex;
     align-items: center;
-    max-width: 24px ;
+    max-width: 24px;
   }
 
   .top-section__slogan {
@@ -640,7 +637,9 @@ body {
     line-height: 18px;
   }
 
-  ._blank {display: none;}
+  ._blank {
+    display: none;
+  }
 
   ._form-item-adults {
     border-right: none;
@@ -666,8 +665,8 @@ body {
   }
 
   ._select-children {
-    border-left: 1px solid #BFBFBF;
-    border-right: 1px solid #BFBFBF;
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
     border-radius: 0;
     padding-bottom: 2px;
   }
@@ -728,7 +727,7 @@ body {
   }
 
   ._label-children:after {
-   display: none;
+    display: none;
   }
 
   ._label-rooms {
@@ -881,7 +880,8 @@ body {
   .header__menu-icons_menu {
     display: flex;
     align-items: center;
-    max-width: 24px ;}
+    max-width: 24px;
+  }
 
   .top-section__slogan {
     font-size: 30px;
