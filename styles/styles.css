@@ -284,6 +284,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -364,6 +365,7 @@ body {
 }
 
 .top-section__form-button-text {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 2.4rem;
   line-height: 2.8rem;
@@ -811,7 +813,6 @@ body {
   .top-section__form-button-text {
     font-size: 1.9rem;
     font-weight: var(--medium);
-    /*font-weight: bold;*/
     line-height: 2.2rem;
   }
 
