@@ -397,14 +397,10 @@ body {
   margin-bottom: 12rem;
 }
 
-.features__title-container {
-  height: 7rem;
-  margin: 12rem 0 8rem;
-  flex-wrap: wrap;
-}
-
 .features__title {
   text-align: center;
+  margin: 12rem 0 8rem;
+  flex-wrap: wrap;
 }
 
 .features__title:after {
@@ -681,6 +677,10 @@ body {
     padding: 0;
   }
 
+  .site-title {
+    font-size: 3.6rem;
+  }
+
   .header__container {
     max-height: 7rem;
   }
@@ -875,15 +875,11 @@ body {
     margin-bottom: 4rem;
   }
 
-  .site-title {
-    font-size: 3.6rem;
-  }
-
   .features__container {
     margin-bottom: 6rem;
   }
 
-  .features__title-container {
+  .features__title {
     margin: 4rem 0;
   }
 
@@ -985,6 +981,10 @@ body {
     min-width: var(--container-width);
     max-width: 90%;
     padding: 0;
+  }
+
+  .site-title {
+    font-size: 3.6rem;
   }
 
   .header__container {
@@ -1180,16 +1180,14 @@ body {
     margin-bottom: 4rem;
   }
 
-  .site-title {
-    font-size: 3.6rem;
-  }
-
   .features__container {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
-  .features__title-container {
-    margin: 4rem 0;
+  .features__title {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    margin: 2.4rem 0 3.6rem;
   }
 
   .features__title:after {
@@ -1199,21 +1197,39 @@ body {
 
   .features__title:hover:after {
     display: none;
+  }
+
+  .features__content {
+    flex-direction: column;
+    align-content: center;
     margin: 0;
   }
 
   .features__content-item {
-    height: 15rem;
-    margin-bottom: 4rem;
-    padding: 0;
+    height: 10.4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .features__content-item:last-child {
+    margin-bottom: 0;
   }
 
   .features__content-icon {
-    max-height: 8rem;
+    max-width: 7rem;
+    /*width: 100%;*/
+    max-height: 6.4rem;
+    aspect-ratio: 1/1;
+    padding: 0;
   }
 
   .features__content-text {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
   }
 
   .footer__content-container {
