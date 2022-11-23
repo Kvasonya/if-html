@@ -139,22 +139,22 @@
               <use href="../images/sprite.svg#logo" />
             </svg>
           </div>
-          <nav class="header__menu _flex-between">
-            <a href="#" class="header__menu-link link _flex-between">Stays</a>
-            <a href="#" class="header__menu-link link _flex-between"
-              >Attractions</a
-            >
-            <div class="header__menu-icons _flex-between">
-              <svg class="header__menu-icons_night-theme">
+          <nav class="header__menu">
+            <a href="#" class="header__menu-link link">Stays</a>
+            <a href="#" class="header__menu-link link">Attractions</a>
+            <a href="#" class="header__menu-link">
+              <svg class="header__menu-icon header__menu-icon_night-theme">
                 <use href="../images/sprite.svg#night" />
               </svg>
-              <svg class="header__menu-icons_account">
+            </a>
+            <a href="#" class="header__menu-link">
+              <svg class="header__menu-icon header__menu-icon_account">
                 <use href="../images/sprite.svg#account" />
               </svg>
-              <svg class="header__menu-icons_menu">
-                <use href="../images/sprite.svg#menu" />
-              </svg>
-            </div>
+            </a>
+            <svg class="header__menu-icon header__menu-icon_menu">
+              <use href="../images/sprite.svg#menu" />
+            </svg>
           </nav>
         </div>
       </header>
@@ -355,9 +355,9 @@
         </div>
       </div>
     </div>
-    <div class="footer _bg-dark">
-      <div
-        class="container footer__container col-xl-12 col-lg-6 col-md-12 col-sm-6 col-xs-6"
+    <div class="_bg-dark">
+      <footer
+        class="footer container footer__container col-xl-12 col-lg-6 col-md-12 col-sm-6 col-xs-6"
       >
         <div class="footer__logo-container container">
           <svg class="footer__logo">
@@ -432,7 +432,7 @@
         <p class="footer__copy">
           &copy; 2022Triphouse, Inc. All rights reserved
         </p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>

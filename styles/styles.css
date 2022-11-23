@@ -5,12 +5,16 @@
   --primary-light: #3077c6;
   --accent-yellow: #f5bd41;
   --white: #ffffff;
+  --bg-main: #eaf0f9;
+  --stroke-color: #f3f3f4;
   --text-color: #383838;
   --secondary-text: #bfbfbf;
   --regular: 400;
   --medium: 500;
   --col-width: calc(100% / 12);
   --container-width: 126.4rem;
+  --indent-sections: 12rem;
+  --img-width: 29.6rem;
 }
 
 html {
@@ -87,6 +91,7 @@ body {
 }
 
 .site-title {
+  text-align: center;
   font-weight: var(--medium);
   font-size: 4rem;
   line-height: 4.7rem;
@@ -128,6 +133,7 @@ body {
   height: 8.5rem;
   padding-top: 5rem;
   align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -142,46 +148,66 @@ body {
   line-height: 2.8rem;
   display: flex;
   align-items: center;
+  gap: 2.4rem;
+  position: relative;
 }
 
 .header__menu-link {
   height: 4rem;
   max-width: 11.8rem;
   padding-top: 0.2rem;
-  flex-direction: column;
   color: var(--white);
-}
-
-.header__menu-link:hover:after {
-  display: block;
-  width: 90%;
-  min-width: 50px;
-  content: "";
   position: relative;
-  border-bottom: 4px solid var(--accent-yellow);
-  margin: 10px auto 0;
 }
 
-.header__menu-icons {
-  width: 9.4rem;
-  margin-left: 2.4rem;
-  align-items: center;
+.header__menu-link:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 0.4rem solid var(--accent-yellow);
+  width: 0;
+}
+
+.header__menu-link:first-child:hover:after {
+  width: 5rem;
+}
+
+.header__menu-link:nth-child(2):hover:after {
+  width: 10.8rem;
+}
+
+/*.header__menu-icons {*/
+/*  width: 9.4rem;*/
+/*  margin-left: 2.4rem;*/
+/*  align-items: center;*/
+/*  color: var(--white);*/
+/*}*/
+
+.header__menu-icon {
+  position: absolute;
   color: var(--white);
 }
 
-.header__menu-icons_account {
+.header__menu-icon_account {
   max-width: 4rem;
   max-height: 4rem;
   cursor: pointer;
+  left: 56px;
+  top: -5px;
 }
 
-.header__menu-icons_night-theme {
+.header__menu-icon_night-theme {
   max-width: 3rem;
   max-height: 3.4rem;
   cursor: pointer;
+  left: 26px;
+  top: -4px;
 }
 
-.header__menu-icons_menu {
+.header__menu-icon_menu {
   display: none;
 }
 
@@ -400,26 +426,21 @@ body {
 }
 
 .features__title {
-  text-align: center;
   margin: 12rem 0 8rem;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .features__title:after {
   content: "";
   display: block;
   height: 0.4rem;
-  position: relative;
-  margin: 2rem auto;
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: var(--accent-yellow);
-  transition: width 0.5s ease 0s, right 0.5s ease 0s;
-  width: 0;
-}
-
-.features__title:hover:after {
-  display: block;
   width: 10rem;
-  content: "";
 }
 
 .features__content {
@@ -697,28 +718,31 @@ body {
     justify-content: flex-end;
   }
 
-  .header__menu-link {
+  .header__menu-link:nth-child(-n + 2) {
     display: none;
   }
 
-  .header__menu-icons {
-    width: 10.4rem;
-    margin-left: 0;
-  }
-
-  .header__menu-icons_account {
+  .header__menu-icon_account {
     max-width: 3rem;
     max-height: 3rem;
+    cursor: pointer;
+    left: -8rem;
+    top: 0.5rem;
   }
 
-  .header__menu-icons_night-theme {
+  .header__menu-icon_night-theme {
     max-width: 2rem;
     max-height: 2rem;
+    cursor: pointer;
+    left: -9rem;
+    top: 1rem;
   }
 
-  .header__menu-icons_menu {
+  .header__menu-icon_menu {
     display: block;
     max-width: 2.8rem;
+    aspect-ratio: 1/1;
+    left: 9rem;
   }
 
   .top-section__slogan {
@@ -1002,23 +1026,31 @@ body {
     max-width: 11.8rem;
   }
 
-  .header__menu-link {
+  .header__menu-link:nth-child(-n + 2) {
     display: none;
   }
 
-  .header__menu-icons_account {
+  .header__menu-icon_account {
     max-width: 2.4rem;
     max-height: 2.4rem;
+    cursor: pointer;
+    left: 3rem;
+    top: 0.8rem;
   }
 
-  .header__menu-icons_night-theme {
+  .header__menu-icon_night-theme {
     max-width: 1.6rem;
     max-height: 1.6rem;
+    cursor: pointer;
+    left: 2.2rem;
+    top: 1.2rem;
   }
 
-  .header__menu-icons_menu {
+  .header__menu-icon_menu {
     display: block;
     max-width: 2.4rem;
+    aspect-ratio: 1/1;
+    left: 9.4rem;
   }
 
   .top-section__slogan {
