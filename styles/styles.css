@@ -546,7 +546,7 @@ body {
   max-width: var(--img-width);
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  /*gap: 2.4rem;*/
 }
 
 .slider__content_img {
@@ -562,6 +562,7 @@ body {
 
 .slider__content_link-main {
   color: var(--primary-light);
+  margin: 2.4rem 0;
 }
 
 .slider__content_link-secondary {
@@ -749,7 +750,7 @@ body {
     --col-width: calc(100% / 12);
     --container-width: 75.2rem;
     --delimiter-section: 4rem;
-    --img-width: 23rem;
+    --img-width: 22rem;
   }
 
   .col-md-1 {
@@ -1094,7 +1095,9 @@ body {
 
   :root {
     --col-width: calc(100% / 6);
-    --container-width: 32.8rem;
+    --container-width: 91%;
+    --delimiter-section: 4rem;
+    --img-width: 15.5rem;
   }
 
   .col-xs-1 {
@@ -1128,7 +1131,8 @@ body {
   }
 
   .title {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.3rem;
   }
 
   .header__container {
@@ -1329,16 +1333,14 @@ body {
   }
 
   .markets__container {
-    margin-bottom: 4rem;
+    margin-bottom: var(--delimiter-section);
   }
 
   .features__container {
-    margin-bottom: 4rem;
+    margin-bottom: var(--delimiter-section);
   }
 
   .features__title {
-    font-size: 2.8rem;
-    line-height: 3.3rem;
     margin: 2.4rem 0 3.6rem;
   }
 
@@ -1382,6 +1384,55 @@ body {
     font-size: 1.5rem;
     line-height: 1.8rem;
     text-align: center;
+  }
+
+  .hotels-preferred__title {
+    margin-bottom: 3.2rem;
+  }
+
+  .hotels-preferred__slider {
+    padding-bottom: var(--delimiter-section);
+  }
+
+  .slider {
+    grid-template-columns: repeat(2, var(--img-width));
+  }
+
+  .slider__content_item-3 {
+    display: none;
+  }
+
+  .slider__content_item-4 {
+    display: none;
+  }
+
+  .slider__round-button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .hotels-preferred__slider-round-button {
+    left: calc(var(--container-width) + 9%);
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .slider__round-button-arrow {
+    left: 20%;
+  }
+
+  .arrow-figure__line {
+    padding: 0.5rem;
+  }
+
+  .slider__content_link {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  .slider__content_link-main {
+    color: var(--primary-light);
+    margin: 0.8rem 0 0.4rem;
   }
 
   .footer__content-container {
