@@ -16,7 +16,7 @@
   --delimiter-section: 12rem;
   --img-width: 29.6rem;
   --unit-xs: 0.8rem;
-  --unit-sm: 1.6rem
+  --unit-sm: 1.6rem;
 }
 
 html {
@@ -566,7 +566,7 @@ body {
 }
 
 .slider__content_link-secondary {
-  color: var(--secondary-text)
+  color: var(--secondary-text);
 }
 
 .footer__logo-container {
@@ -741,7 +741,6 @@ body {
   .footer__content {
     font-size: 1.8rem;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
