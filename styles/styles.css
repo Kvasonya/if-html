@@ -605,6 +605,7 @@ select {
   height: 100%;
   border: none;
   border-radius: 8px;
+  background-color: var(--stroke-color);
   font-size: 2.4rem;
   font-weight: var(--regular);
   line-height: 2.8rem;
