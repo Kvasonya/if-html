@@ -6,10 +6,7 @@ mixin header()
       +link('#', 'Stays')(class='header__menu-link')
       +link('#', 'Attractions')(class='header__menu-link')
       a.header__menu-link(href='#')
-        svg.header__menu-icon.header__menu-icon_night-theme
-          use(href='#night')
+        +svg('header__menu-icon header__menu-icon_night-theme','#night')
       a.header__menu-link(href='#')
-        svg.header__menu-icon.header__menu-icon_account
-          use(href='#account')
-      svg.header__menu-icon.header__menu-icon_menu
-        use(href='#menu')
+        +svg('header__menu-icon header__menu-icon_account','#account')
+      +svg('header__menu-icon header__menu-icon_menu','#menu')

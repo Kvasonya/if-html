@@ -1,4 +1,4 @@
-@import url("./fonts.css");
+@import url('./fonts.css');
 
 :root {
   --primary-dark: #10367c;
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -41,13 +41,13 @@ main {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   border: none;
   padding: 0;
 }
 
 select {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .col-xl-1 {
@@ -136,7 +136,7 @@ select {
 }
 
 ._bg-img {
-  background-image: url("../images/castelmezzano.png");
+  background-image: url('../images/castelmezzano.png');
   background-size: cover;
   min-height: 100vh;
   order: 1;
@@ -188,7 +188,7 @@ select {
 .header__menu-link:after {
   display: block;
   position: absolute;
-  content: "";
+  content: '';
   top: 4rem;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -356,7 +356,7 @@ select {
 }
 
 ._label-check-in:after {
-  content: "—";
+  content: '—';
   position: absolute;
   right: -1.7rem;
 }
@@ -373,7 +373,7 @@ select {
 }
 
 ._label-adults:after {
-  content: "—";
+  content: '—';
   position: absolute;
   right: -1.8rem;
 }
@@ -384,7 +384,7 @@ select {
 }
 
 ._label-children:after {
-  content: "—";
+  content: '—';
   position: absolute;
   right: -1.8rem;
 }
@@ -399,11 +399,7 @@ select {
 }
 
 .top-section__form-button:hover {
-  background: linear-gradient(
-    to right,
-    var(--primary-light),
-    var(--primary-dark)
-  );
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
   transition: background 300ms linear 300ms;
 }
 
@@ -449,7 +445,7 @@ select {
 }
 
 .features__title:after {
-  content: "";
+  content: '';
   display: block;
   width: 10rem;
   height: 0.4rem;
@@ -625,7 +621,7 @@ select {
 }
 
 .destinations__buttons-button:nth-child(3):after {
-  content: " of interest";
+  content: ' of interest';
 }
 
 .destinations__buttons-button:focus {
@@ -737,7 +733,7 @@ select {
 
 .sign-up__close:before,
 .sign-up__close:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 3.6rem;
   height: 0.2rem;
@@ -849,7 +845,7 @@ select {
 }
 
 .reviews__slider-content_price:before {
-  content: "From";
+  content: 'From';
   margin-right: 0.4rem;
   font-weight: var(--regular);
 }
@@ -861,7 +857,7 @@ select {
   color: var(--primary-light);
 }
 
-.reviews__hotel-info{
+.reviews__hotel-info {
   height: 5.7rem;
   padding: 0 2.4rem;
   margin-top: 2rem;
@@ -907,7 +903,6 @@ select {
   font-weight: var(--regular);
   line-height: 1.6rem;
   color: var(--secondary-text);
-
 }
 
 .reviews__user-info {
@@ -934,7 +929,7 @@ select {
 .reviews__user-account_country {
   color: var(--secondary-text);
   position: absolute;
-  top: 3rem
+  top: 3rem;
 }
 
 .reviews__user-account_flag-icon {
@@ -1014,7 +1009,6 @@ select {
   color: var(--white);
   flex-wrap: wrap;
 }
-
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   /*For netbooks*/
@@ -1101,7 +1095,7 @@ select {
   }
 
   ._label-adults:after {
-    content: "—";
+    content: '—';
     position: absolute;
     right: -1.5rem;
   }
@@ -1112,7 +1106,7 @@ select {
   }
 
   ._label-children:after {
-    content: "—";
+    content: '—';
     position: absolute;
     right: -1.5rem;
   }
@@ -1141,13 +1135,12 @@ select {
   }
 
   .reviews__slider-content_price {
-    top: calc(var(--img-width-lg) - 5.4%);;
+    top: calc(var(--img-width-lg) - 5.4%);
   }
 
   .footer__content {
     font-size: 1.8rem;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -1571,7 +1564,6 @@ select {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1805,15 +1797,13 @@ select {
 
   .destinations__slider-round-button {
     left: calc(var(--container-width) + 9%);
-    width: 2.8rem;
-    height: 2.8rem;
     top: calc(var(--img-width) / 2);
     bottom: 0;
     transform: translate(-50%, -50%) rotate(0deg);
   }
 
   .sign-up {
-    order: 6
+    order: 6;
   }
 
   .sign-up__container {
@@ -1938,7 +1928,7 @@ select {
     padding: 0 0 3.2rem;
   }
 
-  .reviews__slider-buttons{
+  .reviews__slider-buttons {
     padding-bottom: 4rem;
     display: flex;
     gap: 0.8rem;
@@ -1981,7 +1971,6 @@ select {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -2048,5 +2037,4 @@ select {
     padding-top: var(--delimiter-section);
     padding-bottom: var(--delimiter-section);
   }
-
 }

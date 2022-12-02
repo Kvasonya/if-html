@@ -1,8 +1,4 @@
 mixin reviews
-  //figure.reviews__slider-round-button.slider__round-button._round-button-right
-  //  .slider__round-button-arrow.arrow-figure
-  //    i.arrow-figure__top.arrow-figure__line
-  //    i.arrow-figure__bottom.arrow-figure__line
   .reviews__slider-content.slider__content.reviews__slider-content_item-1.slider__content_item-1
     a.reviews__slider-content_link(href='#')
       +img('../../assets/images/indonezia_bali_ubud-bali-resort-spa.png', 'Ubud Bali Resort&amp;SPA, Bali, Indonesia', 'reviews__slider-content_img slider__content_img')
@@ -16,13 +12,11 @@ mixin reviews
         .reviews__hotel-info-rating_numbers
           | 1324 reviews
     .reviews__slider-content_user-info.reviews__user-info
-      svg.reviews__user-icon
-        use(href='#account')
+      +svg('reviews__user-icon','#account')
       .reviews__user-account
         p.reviews__user-account_name Hanna Ivanova
         p.reviews__user-account_country
-          svg.reviews__user-account_flag-icon
-            use(href='#ukraine')
+          +svg('reviews__user-account_flag-icon','#ukraine')
           |                     Ukraine
     p.reviews__slider-content_text
       | Great location, really pleasant and clean rooms, but the thing
@@ -42,13 +36,11 @@ mixin reviews
         .reviews__hotel-info-rating_numbers
           | 2016 reviews
     .reviews__slider-content_user-info.reviews__user-info
-      svg.reviews__user-icon
-        use(href='#account')
+      +svg('reviews__user-icon','#account')
       .reviews__user-account
         p.reviews__user-account_name Adam Smith
         p.reviews__user-account_country
-          svg.reviews__user-account_flag-icon
-            use(href='#usa')
+          +svg('reviews__user-account_flag-icon','#usa')
           |                     USA
     p.reviews__slider-content_text
       | I&apos;ve been in this hostel for a month and here is the best hostel
@@ -71,13 +63,11 @@ mixin reviews
         .reviews__hotel-info-rating_numbers
           | 815 reviews
     .reviews__slider-content_user-info.reviews__user-info
-      svg.reviews__user-icon
-        use(href='#account')
+      +svg('reviews__user-icon','#account')
       .reviews__user-account
         p.reviews__user-account_name Anika Messer
         p.reviews__user-account_country
-          svg.reviews__user-account_flag-icon
-            use(href='#germany')
+          +svg('reviews__user-account_flag-icon','#germany')
           |                     Germany
     p.reviews__slider-content_text.reviews__text
       | Efficient, friendly, professional, and appropriately attentive.
@@ -85,7 +75,7 @@ mixin reviews
       | surrounding historical sites. Staff is fantastic. Will
       | definitely stay at this location during my next stay in Marocco.
   .reviews__slider-buttons
-    button.reviews__slider-buttons_sm-button
-    button.reviews__slider-buttons_sm-button
-    button.reviews__slider-buttons_sm-button
-    button.reviews__slider-buttons_sm-button
+    +button('','reviews__slider-buttons_sm-button','button')
+    +button('','reviews__slider-buttons_sm-button','button')
+    +button('','reviews__slider-buttons_sm-button','button')
+    +button('','reviews__slider-buttons_sm-button','button')

@@ -1,30 +1,21 @@
 mixin destinations
-  //figure.destinations__slider-round-button.slider__round-button._round-button-down
-  //  .slider__round-button-arrow.arrow-figure
-  //    i.arrow-figure__top.arrow-figure__line
-  //    i.arrow-figure__bottom.arrow-figure__line
   .destinations__slider-content.slider__content.destinations__slider-content_item-1.slider__content_item-1
     .destinations__slider-content-mask.slider-content-mask
       +img('../../assets/images/maldives.png', 'Maldives', 'destinations__slider-content_img slider__content_img')
-      +shadow-mask
+      +shadow-mask('destinations')(class='destinations__slider-mask_shadow')
     +link('#', 'Maldives')(class='destinations__slider-content-link slider__content_link slider__content_link-main')
   .destinations__slider-content.slider__content.destinations__slider-content_item-2.slider__content_item-2
     .destinations__slider-content-mask.slider-content-mask
       +img('../../assets/images/spain.png', 'Spain', 'destinations__slider-content_img slider__content_img')
-      +shadow-mask
+      +shadow-mask('destinations')(class='destinations__slider-mask_shadow')
     +link('#', 'Spain')(class='destinations__slider-content-link slider__content_link slider__content_link-main')
   .destinations__slider-content.slider__content.destinations__slider-content_item-3.slider__content_item-3
     .destinations__slider-content-mask.slider-content-mask
       +img('../../assets/images/norway.png', 'Norway', 'destinations__slider-content_img slider__content_img')
-      +shadow-mask
+      +shadow-mask('destinations')(class='destinations__slider-mask_shadow')
     +link('#', 'Norway')(class='destinations__slider-content-link slider__content_link slider__content_link-main')
   .destinations__slider-content.slider__content.destinations__slider-content-item_4.slider__content_item-4
     .destinations__slider-content-mask.slider-content-mask
       +img('../../assets/images/island.png', 'Island', 'destinations__slider-content_img slider__content_img')
-      +shadow-mask
+      +shadow-mask('destinations')(class='destinations__slider-mask_shadow')
     +link('#', 'Island')(class='destinations__slider-content-link slider__content_link slider__content_link-main')
-
-mixin shadow-mask
-  span.destinations__slider-mask_shadow.slider-content-mask_shadow
-    button.destinations__slider-booking-button.button__main.button
-      | Book now

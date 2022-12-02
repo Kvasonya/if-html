@@ -133,6 +133,7 @@ main {
 
 .header__logo {
   width: 20.5rem;
+  aspect-ratio: 5/1;
   color: $primary-light;
 }
 
@@ -591,8 +592,6 @@ main {
 }
 
 .destinations__slider-round-button {
-  height: 0;
-  //why?
   position: absolute;
   left: calc((var(--container-width) / 2) - (var(--unit-sm)));
   bottom: calc(var(--title-indent) * -1);
@@ -1698,8 +1697,6 @@ main {
 
   .hotels-preferred__slider-round-button {
     left: calc(var(--container-width) + 9%);
-    width: 2.8rem;
-    height: 2.8rem;
   }
 
   .slider__content_link {
@@ -1736,8 +1733,6 @@ main {
 
   .destinations__slider-round-button {
     left: calc(var(--container-width) + 9%);
-    width: 2.8rem;
-    height: 2.8rem;
     top: calc(var(--img-width) / 2);
     bottom: 0;
     transform: translate(-50%, -50%) rotate(0deg);
