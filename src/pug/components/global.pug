@@ -1,0 +1,5 @@
+mixin img(url, alt, className)
+  img(src=require(url), alt=alt)(class=className)
+
+mixin link(href, name)
+  a(class!=attributes.class class='link' href=href)=name

@@ -1,0 +1,140 @@
+include ../sections/header
+include ../sections/footer
+include ../sections/slider_hotels-preferred
+include ../sections/slider_destinations
+include ../sections/slider_reviews
+
+include ../components/page
+include ../components/global
+include ../components/sprite
+include ../components/slider
+
+- var pageInfo = { title: 'TripHouse' };
+
++page(pageInfo)
+  +sprite
+  main.triphouse
+    ._bg-img
+      +header
+      section.top-section.container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+        h1.top-section__slogan
+          | Discover stays
+          br
+          |             to live, work or just relax
+        .top-section__form-container
+          fieldset.top-section__form-fieldset
+            form.top-section__form(action='')
+              .top-section__form-item-group
+                .top-section__form-item
+                  label.top-section__form-label._label-destination(for='search-destination') Your destination or hotel name
+                  div
+                    svg.top-section__form-icon
+                      use(href='#search')
+                  input#search-destination.top-section__form-item-content.top-section__form-item-text._input._input-destination(type='search' name='search-destination' placeholder='New-York' required='')
+              .top-section__form-item-group
+                .top-section__form-item
+                  label.top-section__form-label._label-check-in(for='check-in') Check-in
+                  select#check-in.top-section__form-item-content.top-section__form-item-text._select._select-check-in(name='check-in')
+                    option(disabled='' selected='') Tue 15 Sept
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                p.top-section__form-item-text._blank &mdash;
+                .top-section__form-item
+                  label.top-section__form-label._label-check-out(for='check-out') Check-out
+                  select#check-out.top-section__form-item-content.top-section__form-item-text._select._select-check-out(name='check-out')
+                    option(disabled='' selected='') Sat 19 Sept
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+              .top-section__form-item-group.top-section__form-item-group_rooms
+                .top-section__form-item._form-item-adults
+                  select#adults.top-section__form-item-content.top-section__form-item-text._select._select-adults._text-left(name='adults')
+                    option(disabled='' selected='') 2
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                  label.top-section__form-label._label-adults(for='adults') Adults
+                .top-section__form-item._form-item-children
+                  select#children.top-section__form-item-content.top-section__form-item-text._select._select-children._text-left(name='children')
+                    option(disabled='' selected='') 0
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                  label.top-section__form-label._label-children(for='children') Children
+                .top-section__form-item._form-item-rooms
+                  select#rooms.top-section__form-item-content.top-section__form-item-text._select._select-rooms._text-left(name='rooms')
+                    option(disabled='' selected='') 1
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                  label.top-section__form-label._label-rooms(for='rooms') Rooms
+              .top-section__form-item-group
+                button.top-section__form-item.top-section__form-button.button(type='submit')
+                  span.top-section__form-button-text Search
+        .top-section__markets.markets.container
+          .markets__item
+            a.markets__item-link(href='#')
+              svg.markets__item-icon.markets__item-icon_google-play
+                use(href='#google-play')
+          .markets__item
+            a.markets__item-link(href='#')
+              svg.markets__item-icon.markets__item-icon_app-store
+                use(href='#app-store')
+    section.features.container.features__container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+      h2.features__title.title What do we offer
+      .features__content
+        .features__content-item.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-xs-6
+          svg.features__content-icon.features__content-icon_support
+            use(href='#support')
+          p.features__content-text Support 24/7
+        .features__content-item.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-xs-6
+          svg.features__content-icon.features__content-icon_communicate
+            use(href='#communicate')
+          p.features__content-text Communicate directly
+        .features__content-item.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-xs-6
+          svg.features__content-icon.features__content-icon_book
+            use(href='#book')
+          p.features__content-text Book online
+        .features__content-item.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-xs-6
+          svg.features__content-icon.features__content-icon_reviews
+            use(href='#reviews')
+          p.features__content-text Real guest reviews
+    section.hotels-preferred._bg-main
+      .hotels-preferred__container.container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+        h2.hotels-preferred__title.title Homes guests loves
+        +slider('hotels')
+    section.destinations
+      .destinations__container.container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+        h2.destinations__title.title The best destinations
+        .destinations__buttons
+          button.destinations__buttons-button.button Regions
+          button.destinations__buttons-button.button Cities
+          button.destinations__buttons-button.button Places
+        +slider('destinations')
+    .sign-up
+      .container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+        .sign-up__container
+          figure.sign-up__logo-box
+            svg.sign-up__logo-box-icon
+              use(href='#logo')
+          figure.sign-up__round-figure
+            svg.sign-up__round-figure-icon.sign-up__round-figure-icon_user
+              use(href='#user')
+            svg.sign-up__round-figure-icon.sign-up__round-figure-icon_plus
+              use(href='#user-plus')
+          p.sign-up__text.sign-up__text-desktop
+            | Sign up and get 20% off your first booking
+          p.sign-up__text.sign-up__text-mobile
+            | Sign up in the app and get 20%
+            br
+            |               off your first booking
+          a.sign-up__link.link(href='#') Install
+          button.sign-up__button.button.button__main Sign up
+          .sign-up__close.close
+    section.reviews
+      .reviews__container.container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+        h2.reviews__title.title Guests reviews
+        .reviews__slider
+          +slider('reviews')
+    +footer

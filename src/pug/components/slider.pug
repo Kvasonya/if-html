@@ -1,0 +1,22 @@
+mixin slider(name)
+    if name==='hotels'
+      .slider.hotels-preferred__slider
+        +hotels-preferred
+        .hotels-preferred__slider-round-button
+          +slider-round-button
+    else if name==='destinations'
+      .slider.destinations__slider
+        +destinations
+        .destinations__slider-round-button
+          +slider-round-button
+    else if name==='reviews'
+      .slider.reviews__slider
+        +reviews
+        .reviews__slider-round-button
+          +slider-round-button
+
+mixin slider-round-button
+  figure.slider__round-button
+    .slider__round-button-arrow.arrow-figure
+      i.arrow-figure__top.arrow-figure__line
+      i.arrow-figure__bottom.arrow-figure__line

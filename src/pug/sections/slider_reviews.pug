@@ -1,0 +1,91 @@
+mixin reviews
+  //figure.reviews__slider-round-button.slider__round-button._round-button-right
+  //  .slider__round-button-arrow.arrow-figure
+  //    i.arrow-figure__top.arrow-figure__line
+  //    i.arrow-figure__bottom.arrow-figure__line
+  .reviews__slider-content.slider__content.reviews__slider-content_item-1.slider__content_item-1
+    a.reviews__slider-content_link(href='#')
+      +img('../../assets/images/indonezia_bali_ubud-bali-resort-spa.png', 'Ubud Bali Resort&amp;SPA, Bali, Indonesia', 'reviews__slider-content_img slider__content_img')
+    span.reviews__slider-content_price 250 USD
+    .reviews__slider-content_hotel-info.reviews__hotel-info
+      .reviews__hotel-info-location
+        +link('#','Ubud Bali Resort&SPA')(class='reviews__hotel-info-location_name reviews__slider-content_link')
+        +link('#', 'Bali, Indonesia')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+      .reviews__hotel-info-rating
+        .reviews__hotel-info-rating_score 9,4
+        .reviews__hotel-info-rating_numbers
+          | 1324 reviews
+    .reviews__slider-content_user-info.reviews__user-info
+      svg.reviews__user-icon
+        use(href='#account')
+      .reviews__user-account
+        p.reviews__user-account_name Hanna Ivanova
+        p.reviews__user-account_country
+          svg.reviews__user-account_flag-icon
+            use(href='#ukraine')
+          |                     Ukraine
+    p.reviews__slider-content_text
+      | Great location, really pleasant and clean rooms, but the thing
+      | that makes this such a good place to stay are the staff. All of
+      | the people are incredibly helpful and generous with their time
+      | and advice.
+  .reviews__slider-content.slider__content.reviews__slider-content_item-2.slider__content_item-2
+    a.reviews__slider-content_link(href='#')
+      +img('../../assets/images/netherlands_rotterdam_king-kong-hostel.png', 'King-Kong Hostel, Netherlands, Rotterdam', 'reviews__slider-content_img slider__content_img')
+    span.reviews__slider-content_price 40 USD
+    .reviews__slider-content_hotel-info.reviews__hotel-info
+      .reviews__hotel-info-location
+        +link('#','King Kong Hostel')(class='reviews__hotel-info-location_name reviews__slider-content_link')
+        +link('#','Rotterdam, Netherlands')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+      .reviews__hotel-info-rating
+        .reviews__hotel-info-rating_score 8,9
+        .reviews__hotel-info-rating_numbers
+          | 2016 reviews
+    .reviews__slider-content_user-info.reviews__user-info
+      svg.reviews__user-icon
+        use(href='#account')
+      .reviews__user-account
+        p.reviews__user-account_name Adam Smith
+        p.reviews__user-account_country
+          svg.reviews__user-account_flag-icon
+            use(href='#usa')
+          |                     USA
+    p.reviews__slider-content_text
+      | I&apos;ve been in this hostel for a month and here is the best hostel
+      | of all
+      br
+      | Excellent management of excellent and ethical staff
+      |                 and bedrooms Bathrooms are always clean and excellent
+      br
+      |                 Most importantly, those who work here are kind and good-natured.
+  .reviews__slider-content.slider__content.reviews__slider-content_item-3.slider__content_item-3
+    a.reviews__slider-content_link(href='#')
+      +img('../../assets/images/marocco_ourika-rokoko-hotel.png', 'Rokoko Hotel, Maroссo, Ourika', 'reviews__slider-content_img slider__content_img')
+    span.reviews__slider-content_price 100 USD
+    .reviews__slider-content_hotel-info.reviews__hotel-info
+      .reviews__hotel-info-location
+        +link('#','Rokoko Hotel')(class='reviews__hotel-info-location_name reviews__slider-content_link')
+        +link('#','Ourika, Marocco')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+      .reviews__hotel-info-rating
+        .reviews__hotel-info-rating_score 9,1
+        .reviews__hotel-info-rating_numbers
+          | 815 reviews
+    .reviews__slider-content_user-info.reviews__user-info
+      svg.reviews__user-icon
+        use(href='#account')
+      .reviews__user-account
+        p.reviews__user-account_name Anika Messer
+        p.reviews__user-account_country
+          svg.reviews__user-account_flag-icon
+            use(href='#germany')
+          |                     Germany
+    p.reviews__slider-content_text.reviews__text
+      | Efficient, friendly, professional, and appropriately attentive.
+      | Great hotel in a great location. Easy access to all the
+      | surrounding historical sites. Staff is fantastic. Will
+      | definitely stay at this location during my next stay in Marocco.
+  .reviews__slider-buttons
+    button.reviews__slider-buttons_sm-button
+    button.reviews__slider-buttons_sm-button
+    button.reviews__slider-buttons_sm-button
+    button.reviews__slider-buttons_sm-button
