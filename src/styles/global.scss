@@ -1,4 +1,24 @@
-$primary-color: #ff9300;
+:root {
+  --primary-dark: #10367c;
+  --primary-light: #3077c6;
+  --accent-yellow: #f5bd41;
+  --white: #ffffff;
+  --bg-main: #eaf0f9;
+  --stroke-color: #f3f3f4;
+  --text-color: #383838;
+  --secondary-text: #bfbfbf;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+  --col-width: calc(100% / 12);
+  --container-width: 126.4rem;
+  --delimiter-section: 12rem;
+  --title-indent: 10.4rem;
+  --img-width: 29.6rem;
+  --img-width-lg: 40rem;
+  --unit-xs: 0.8rem;
+  --unit-sm: 1.6rem;
+}
 
 html {
   font-size: 10px;
@@ -7,6 +27,11 @@ html {
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -21,4 +46,53 @@ button {
 
 select {
   font-family: Roboto, sans-serif;
+}
+
+._bg-img {
+  background-image: url('.././assets/images/castelmezzano.png');
+  background-size: cover;
+  min-height: 100vh;
+  order: 1;
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
+}
+
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--unit-sm);
+}
+
+.title {
+  text-align: center;
+  font-weight: var(--medium);
+  font-size: 4rem;
+  line-height: 4.7rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+._bg-main {
+  width: 100%;
+  background-color: var(--bg-main);
+}
+
+._bg-dark {
+  width: 100%;
+  background-color: var(--primary-dark);
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
 }

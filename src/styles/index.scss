@@ -1,4 +1,32 @@
 @import './fonts';
 @import './global';
+@import './components/media';
+@import './components/slider';
 
 @import './pages/index';
+
+//header
+@import './sections/header';
+
+//top-section
+@import './sections/top-section/slogan';
+@import './sections/top-section/form';
+@import './sections/top-section/markets';
+
+//features
+@import './sections/features';
+
+//hotels-preferred
+@import './sections/hotels-preferred';
+
+//destinations
+@import './sections/destinations';
+
+//reviews
+@import './sections/reviews';
+
+//sign-up
+@import './sections/sign-up';
+
+//footer
+@import './sections/footer';

@@ -1,0 +1,9 @@
+mixin destinations
+  section.destinations
+    .destinations__container.container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+      h2.destinations__title.title The best destinations
+      .destinations__buttons
+        +button('Regions','destinations__buttons-button','button')
+        +button('Cities','destinations__buttons-button','button')
+        +button('Places','destinations__buttons-button','button')
+      +slider('destinations-slider')

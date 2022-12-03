@@ -1,0 +1,18 @@
+mixin sign-up
+  .sign-up
+    .container.col-xl-12.col-lg-12.col-md-12.col-sm-6.col-xs-6
+      .sign-up__container
+        figure.sign-up__logo-box
+          +svg('sign-up__logo-box-icon','#logo')
+        figure.sign-up__round-figure
+          +svg('sign-up__round-figure-icon sign-up__round-figure-icon_user','#user')
+          +svg('sign-up__round-figure-icon sign-up__round-figure-icon_plus','#user-plus')
+        p.sign-up__text.sign-up__text-desktop
+          | Sign up and get 20% off your first booking
+        p.sign-up__text.sign-up__text-mobile
+          | Sign up in the app and get 20%
+          br
+          |               off your first booking
+        +link('#','Install')(class='sign-up__link')
+        +button('Sign up','sign-up__button button__main', 'button')
+        .sign-up__close.close
