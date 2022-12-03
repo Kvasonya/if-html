@@ -86,3 +86,73 @@
     transform: rotate(40deg);
   }
 }
+
+@include netbook {
+  .slider {
+    &__content {
+      &_link {
+        font-weight: var(--regular);
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .slider {
+    grid-template-columns: repeat(3, var(--img-width));
+    &__content {
+      &_link {
+        font-size: 2.2rem;
+      }
+      &_item-4 {
+        display: none;
+      }
+    }
+    &__round-button {
+      width: 3rem;
+      height: 3rem;
+      &-arrow {
+        left: 20%;
+      }
+    }
+  }
+  .slider-content-mask {
+    &_shadow {
+      &:hover {
+        display: none;
+      }
+    }
+  }
+  .arrow-figure {
+    &__line {
+      padding: 0.5rem;
+    }
+  }
+}
+
+@include mobile-sm {
+  .slider {
+    &__content {
+      &_link {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
+      &_link-main {
+        margin: 0.8rem 0 0.4rem;
+      }
+    }
+  }
+}
+
+@include mobile-xs {
+  .slider {
+    grid-template-columns: repeat(2, var(--img-width));
+    &__content {
+      &_item-3 {
+        display: none;
+      }
+    }
+  }
+}

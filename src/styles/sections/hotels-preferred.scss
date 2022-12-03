@@ -1,0 +1,52 @@
+.hotels-preferred {
+  order: 3;
+  &__container {
+    padding-bottom: var(--delimiter-section);
+    position: relative;
+  }
+  &__title {
+    padding-top: var(--delimiter-section);
+    margin-bottom: var(--title-indent);
+  }
+  &__slider {
+    padding-bottom: var(--delimiter-section);
+    position: relative;
+    &-round-button {
+      position: absolute;
+      left: calc(var(--container-width) - (var(--unit-sm) * 2));
+      top: calc(var(--img-width) / 2);
+    }
+  }
+}
+
+@include netbook {
+  .hotels-preferred {
+    &__title {
+      margin-bottom: 6.5rem;
+    }
+  }
+}
+
+@include tablet {
+  .hotels-preferred {
+    &__title {
+      margin-bottom: var(--delimiter-section);
+    }
+  }
+}
+
+@include mobile-sm {
+  .hotels-preferred {
+    &__title {
+      margin-bottom: 3.2rem;
+    }
+    &__slider {
+      padding-bottom: var(--delimiter-section);
+      &-round-button {
+        left: calc(var(--container-width) + 9%);
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    }
+  }
+}
