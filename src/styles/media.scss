@@ -1,8 +1,3 @@
-$breakpoint-lg: 1280px;
-$breakpoint-md: 1024px;
-$breakpoint-sm: 768px;
-$breakpoint-xs: 480px;
-
 @mixin netbook() {
   @media screen and (max-width: $breakpoint-lg) {
     @content;
