@@ -1,0 +1,26 @@
+.top-section {
+  &__slogan {
+    margin: 20rem 0 14.4rem;
+    font-size: 5rem;
+    font-weight: var(--medium);
+    line-height: 5.9rem;
+    color: var(--white);
+  }
+}
+
+@include tablet {
+  .top-section {
+    &__slogan {
+      margin: 5.2rem 0 3rem;
+    }
+  }
+}
+
+@include mobile-sm {
+  .top-section {
+    &__slogan {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+}

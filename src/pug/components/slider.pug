@@ -1,0 +1,25 @@
+mixin slider(name)
+    if name==='hotels'
+      .slider.hotels-preferred__slider
+        +hotels-preferred
+        +slider-round-button('hotels-preferred__slider-round-button')
+    else if name==='destinations-slider'
+      .slider.destinations__slider
+        +destinations-slider
+        +slider-round-button('destinations__slider-round-button')
+    else if name==='reviews-slider'
+      .slider.reviews__slider
+        +reviews-slider
+        +slider-round-button('reviews__slider-round-button')
+
+mixin slider-round-button(className)
+  figure(class='slider__round-button' class=className)
+    .slider__round-button-arrow.arrow-figure
+      i.arrow-figure__top.arrow-figure__line
+      i.arrow-figure__bottom.arrow-figure__line
+
+mixin shadow-mask(name)
+  span(class!=attributes.class class='slider-content-mask_shadow')
+    if name==='destinations'
+      +button('Book now','destinations__slider-booking-button button__main', 'button')
+

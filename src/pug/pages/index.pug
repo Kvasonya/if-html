@@ -1,0 +1,32 @@
+include ../sections/header
+include ../sections/top-section
+include ../sections/features
+include ../sections/hotels-preffered
+include ../sections/destinations
+include ../sections/sign-up
+include ../sections/reviews
+include ../sections/footer
+
+include ../content/slider_hotels-preferred
+include ../content/slider_destinations
+include ../content/slider_reviews
+
+include ../components/page
+include ../components/global
+include ../components/sprite
+include ../components/slider
+
+- var pageInfo = { title: 'TripHouse' };
+
++page(pageInfo)
+  +sprite
+  main.triphouse
+    ._bg-img
+      +header
+      +top-section
+    +features
+    +hotels-preffered
+    +destinations
+    +sign-up
+    +reviews
+    +footer

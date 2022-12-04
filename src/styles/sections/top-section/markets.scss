@@ -1,0 +1,27 @@
+.top-section {
+  &__markets {
+    display: flex;
+    justify-content: center;
+    gap: var(--unit-sm);
+    padding-bottom: var(--delimiter-section);
+  }
+}
+.markets__item-icon {
+  cursor: pointer;
+  &_google-play {
+    max-width: 13.5rem;
+    max-height: 4rem;
+  }
+  &_app-store {
+    max-width: 11.7rem;
+    max-height: 3.8rem;
+  }
+}
+
+@include mobile-sm {
+  .top-section {
+    &__markets {
+      padding-bottom: var(--delimiter-section);
+    }
+  }
+}

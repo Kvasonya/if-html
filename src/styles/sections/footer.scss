@@ -1,0 +1,127 @@
+.footer {
+  order: 7;
+  &__logo-container {
+    display: none;
+  }
+  &__logo {
+    color: var(--white);
+  }
+  &__content-container {
+    padding: var(--delimiter-section) var(--delimiter-section) 0 0;
+    @include flex_between;
+  }
+  &__content {
+    font-size: 2rem;
+    font-weight: var(--regular);
+    line-height: 2.3rem;
+    color: var(--white);
+    &-title {
+      font-weight: var(--medium);
+      padding: 0;
+    }
+    &-list {
+      list-style: none;
+      margin-top: 2.4rem;
+      padding: 0;
+      font-weight: var(--regular);
+      flex-wrap: wrap;
+    }
+    &-link {
+      color: var(--white);
+    }
+  }
+  &__copy {
+    margin-top: 6.4rem;
+    font-weight: var(--regular);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0 0 var(--delimiter-section) 0;
+    color: var(--white);
+    flex-wrap: wrap;
+  }
+}
+
+@include netbook {
+  .footer {
+    &__content {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    &__content-container {
+      padding: 0;
+    }
+    &__logo-container {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    &__logo {
+      max-width: 9.8rem;
+      max-height: 1.9rem;
+    }
+    &__content {
+      &-title {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+        text-decoration-line: underline;
+      }
+      &-list {
+        display: none;
+      }
+    }
+    &__copy {
+      text-align: center;
+      padding-bottom: 4rem;
+      margin-top: 3.2rem;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+@include mobile-sm {
+  .footer {
+    &__content-container {
+      justify-content: center;
+      gap: 1.6rem;
+    }
+    &__logo-container {
+      padding-top: var(--delimiter-section);
+      padding-bottom: var(--delimiter-section);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    &__logo {
+      max-width: 9.8rem;
+      max-height: 1.9rem;
+    }
+    &__content {
+      &-title {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+        text-decoration-line: underline;
+      }
+      &-list {
+        display: none;
+      }
+    }
+    &__copy {
+      text-align: center;
+      padding-bottom: var(--delimiter-section);
+      margin-top: 3.2rem;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+  }
+}
