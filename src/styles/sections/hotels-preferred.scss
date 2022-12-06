@@ -19,12 +19,13 @@
   }
 }
 .hotels-preferred__slider-round-button-prev {
-  transform: translate(-50%, 25%) rotate(180deg);
+  transform: translate(-50%, 0) rotate(180deg);
   left: 0;
 }
 .hotels-preferred__slider-round-button-next {
   overflow: visible;
   left: calc(var(--container-width) - (var(--unit-sm)) * 2);
+  transform: translate(-50%, 0);
 }
 
 @include netbook {

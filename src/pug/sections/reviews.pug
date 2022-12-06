@@ -17,8 +17,8 @@ mixin reviews
               span.reviews__slider-content_price 250 USD
               .reviews__slider-content_hotel-info.reviews__hotel-info
                 .reviews__hotel-info-location
-                  +link('#','Ubud Bali Resort&SPA')(class='reviews__hotel-info-location_name reviews__slider-content_link')
-                  +link('#', 'Bali, Indonesia')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+                  +link('#','Ubud Bali Resort&SPA').reviews__hotel-info-location_name.reviews__slider-content_link
+                  +link('#', 'Bali, Indonesia').reviews__hotel-info-location_country.reviews__slider-content_link
                 .reviews__hotel-info-rating
                   .reviews__hotel-info-rating_score 9,4
                   .reviews__hotel-info-rating_numbers
@@ -29,21 +29,22 @@ mixin reviews
                   p.reviews__user-account_name Hanna Ivanova
                   p.reviews__user-account_country
                     +svg('reviews__user-account_flag-icon','#ukraine')
-                    |                     Ukraine
+                    |
+                    | Ukraine
               p.reviews__slider-content_text
                 | Great location, really pleasant and clean rooms, but the thing
                 | that makes this such a good place to stay are the staff. All of
                 | the people are incredibly helpful and generous with their time
                 | and advice.
-          .swiper-slide
+          .swiper-slide.reviews-swiper-slide
             .reviews__slider-content.slider__content
               a.reviews__slider-content_link(href='#')
                 +img('../../assets/images/netherlands_rotterdam_king-kong-hostel.png', 'King-Kong Hostel, Netherlands, Rotterdam', 'reviews__slider-content_img slider__content_img')
               span.reviews__slider-content_price 40 USD
               .reviews__slider-content_hotel-info.reviews__hotel-info
                 .reviews__hotel-info-location
-                  +link('#','King Kong Hostel')(class='reviews__hotel-info-location_name reviews__slider-content_link')
-                  +link('#','Rotterdam, Netherlands')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+                  +link('#','King Kong Hostel').reviews__hotel-info-location_name.reviews__slider-content_link
+                  +link('#','Rotterdam, Netherlands').reviews__hotel-info-location_country.reviews__slider-content_link
                 .reviews__hotel-info-rating
                   .reviews__hotel-info-rating_score 8,9
                   .reviews__hotel-info-rating_numbers
@@ -54,24 +55,27 @@ mixin reviews
                   p.reviews__user-account_name Adam Smith
                   p.reviews__user-account_country
                     +svg('reviews__user-account_flag-icon','#usa')
-                    |                     USA
+                    |
+                    | USA
               p.reviews__slider-content_text
                 | I&apos;ve been in this hostel for a month and here is the best hostel
                 | of all
                 br
                 | Excellent management of excellent and ethical staff
-                |                 and bedrooms Bathrooms are always clean and excellent
+                |
+                | and bedrooms Bathrooms are always clean and excellent
                 br
-                |                 Most importantly, those who work here are kind and good-natured.
-          .swiper-slide
+                |
+                | Most importantly, those who work here are kind and good-natured.
+          .swiper-slide.reviews-swiper-slide
             .reviews__slider-content.slider__content
               a.reviews__slider-content_link(href='#')
                 +img('../../assets/images/marocco_ourika-rokoko-hotel.png', 'Rokoko Hotel, Maroссo, Ourika', 'reviews__slider-content_img slider__content_img')
               span.reviews__slider-content_price 100 USD
               .reviews__slider-content_hotel-info.reviews__hotel-info
                 .reviews__hotel-info-location
-                  +link('#','Rokoko Hotel')(class='reviews__hotel-info-location_name reviews__slider-content_link')
-                  +link('#','Ourika, Marocco')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+                  +link('#','Rokoko Hotel').reviews__hotel-info-location_name.reviews__slider-content_link
+                  +link('#','Ourika, Marocco').reviews__hotel-info-location_country.reviews__slider-content_link
                 .reviews__hotel-info-rating
                   .reviews__hotel-info-rating_score 9,1
                   .reviews__hotel-info-rating_numbers
@@ -82,21 +86,22 @@ mixin reviews
                   p.reviews__user-account_name Anika Messer
                   p.reviews__user-account_country
                     +svg('reviews__user-account_flag-icon','#germany')
-                    |                     Germany
+                    |
+                    | Germany
               p.reviews__slider-content_text.reviews__text
                 | Efficient, friendly, professional, and appropriately attentive.
                 | Great hotel in a great location. Easy access to all the
                 | surrounding historical sites. Staff is fantastic. Will
                 | definitely stay at this location during my next stay in Marocco.
-          .swiper-slide
+          .swiper-slide.reviews-swiper-slide
             .reviews__slider-content.slider__content
               a.reviews__slider-content_link(href='#')
                 +img('../../assets/images/austria_vienna-hotel-bellevue-wien.png', 'Hotel Bellevue Wien, Austria, Vienna', 'reviews__slider-content_img slider__content_img')
               span.reviews__slider-content_price 120 USD
               .reviews__slider-content_hotel-info.reviews__hotel-info
                 .reviews__hotel-info-location
-                  +link('#','Hotel Bellevue Wien')(class='reviews__hotel-info-location_name reviews__slider-content_link')
-                  +link('#','Vienna, Austria')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+                  +link('#','Hotel Bellevue Wien').reviews__hotel-info-location_name.reviews__slider-content_link
+                  +link('#','Vienna, Austria').reviews__hotel-info-location_country.reviews__slider-content_link
                 .reviews__hotel-info-rating
                   .reviews__hotel-info-rating_score 9,0
                   .reviews__hotel-info-rating_numbers
@@ -108,18 +113,19 @@ mixin reviews
                   p.reviews__user-account_name Hanzo Hasashi
                   p.reviews__user-account_country
                     +svg('reviews__user-account_flag-icon','#japan')
-                    |                     Japan
+                    |
+                    | Japan
               p.reviews__slider-content_text.reviews__text
                 | The rooms were clean, very comfortable, and the staff was amazing. They went over and beyond to help make our stay enjoyable. I highly recommend this hotel for anyone visiting Vienna.
-          .swiper-slide
+          .swiper-slide.reviews-swiper-slide
             .reviews__slider-content.slider__content
               a.reviews__slider-content_link(href='#')
                 +img('../../assets/images/italy_rome-the_bricks_rome.png', 'The Bricks Rome, Italy, Rome', 'reviews__slider-content_img slider__content_img')
               span.reviews__slider-content_price 80 USD
               .reviews__slider-content_hotel-info.reviews__hotel-info
                 .reviews__hotel-info-location
-                  +link('#','The Bricks Rome')(class='reviews__hotel-info-location_name reviews__slider-content_link')
-                  +link('#','Rome, Italy')(class='reviews__hotel-info-location_country reviews__slider-content_link')
+                  +link('#','The Bricks Rome').reviews__hotel-info-location_name.reviews__slider-content_link
+                  +link('#','Rome, Italy').reviews__hotel-info-location_country.reviews__slider-content_link
                 .reviews__hotel-info-rating
                   .reviews__hotel-info-rating_score 7,9
                   .reviews__hotel-info-rating_numbers
@@ -130,7 +136,8 @@ mixin reviews
                   p.reviews__user-account_name Freja Hansen
                   p.reviews__user-account_country
                     +svg('reviews__user-account_flag-icon','#denmark')
-                    |                     Denmark
+                    |
+                    | Denmark
               p.reviews__slider-content_text.reviews__text
                 | Unlike some of the posts I’ve read in other places, I found the Bricks Rome to be clean, inviting and downright classic! The staff was very friendly and consistently making sure I was comfortable. I will definitely stay there when I come back!
         .swiper-pagination.reviews__swiper-pagination
