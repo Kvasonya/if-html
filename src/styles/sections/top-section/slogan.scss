@@ -1,6 +1,6 @@
 .top-section {
   &__slogan {
-    margin: 20rem 0 14.4rem;
+    margin: 21rem 0 14rem;
     font-size: 5rem;
     font-weight: var(--medium);
     line-height: 5.9rem;
@@ -11,7 +11,7 @@
 @include tablet {
   .top-section {
     &__slogan {
-      margin: 5.2rem 0 3rem;
+      margin: 5rem 0 3rem;
     }
   }
 }
