@@ -154,3 +154,14 @@ mixin sprite
       g(fill-rule='evenodd', stroke-width='1pt')
         path(fill='#ffd500', d='M0 0h640v480H0z')
         path(fill='#005bbb', d='M0 0h640v240H0z')
+    symbol#japan(viewBox='0 0 640 480')
+      defs
+        clippath#a
+          path(fill-opacity='.7', d='M-88 32h640v480H-88z')
+      g(fill-rule='evenodd', stroke-width='1pt', clip-path='url(#a)', transform='translate(88 -32)')
+        path(fill='#fff', d='M-128 32h720v480h-720z')
+        circle(cx='523.1', cy='344.1', r='194.9', fill='#d30000', transform='translate(-168.4 8.6) scale(.76554)')
+    symbol#denmark(viewBox='0 0 640 480')
+      path(fill='#c8102e', d='M0 0h640.1v480H0z')
+      path(fill='#fff', d='M205.7 0h68.6v480h-68.6z')
+      path(fill='#fff', d='M0 205.7h640.1v68.6H0z')

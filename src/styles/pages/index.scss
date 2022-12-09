@@ -1,3 +1,60 @@
+//.swiper-slide {
+//  height: auto;
+//}
+//.reviews__slider-round-button-prev {
+//  transform: translate(-75%, 0) rotate(180deg);
+//}
+//.reviews__slider-round-button-next {
+//  overflow: visible;
+//  left: calc(var(--container-width) - (var(--unit-sm)) * 2);
+//}
+//
+//.hotels-preferred__slider-round-button-prev {
+//  transform: translate(-50%, 25%) rotate(180deg);
+//  left: 0;
+//}
+//.hotels-preferred__slider-round-button-next {
+//  overflow: visible;
+//  left: calc(var(--container-width) - (var(--unit-sm)) * 2);
+//}
+//
+//.swiper-pagination-bullet {
+//  border-radius: 50%;
+//  border: 1px solid var(--text-color);
+//  background: transparent;
+//  opacity: 1;
+//}
+//
+//.swiper-pagination-bullet-active {
+//  background: var(--text-color);
+//}
+//
+//.swiper-pagination {
+//  display: none;
+//  position: static;
+//  //margin-bottom: 4rem;
+//}
+//
+//.swiper-button-prev:after,
+//.swiper-rtl .swiper-button-next:after {
+//  display: none;
+//}
+//.swiper-button-next:after,
+//.swiper-rtl .swiper-button-prev:after {
+//  display: none;
+//}
+//
+//.hotels-preferred__slider-content > a:first-child {
+//  display: flex;
+//  border: 2px solid red;
+//}
+//
+//@media screen and (max-width: $breakpoint-sm) {
+//  .swiper-slide {
+//    display: flex;
+//    justify-content: center;
+//  }
+//}
 //.col-xl-1 {
 //  width: var(--col-width);
 //}
@@ -152,6 +209,28 @@
 //
 //@media screen and (max-width: $breakpoint-sm) {
 //  /*For mobile phones*/
+//  .swiper-pagination {
+//    display: block;
+//    position: static;
+//    //margin-bottom: 4rem;
+//  }
+//
+//.swiper-slide {
+//  width: var(--img-width);
+//}
+//.swiper-slide-active {
+//  display: flex;
+//  justify-content: flex-start;
+//}
+//.swiper-slide-next {
+//  display: flex;
+//  justify-content: center;
+//}
+//.swiper-slide {
+//  display: flex;
+//  justify-content: flex-end;
+//}
+//}
 //
 //  .col-sm-1 {
 //    width: var(--col-width);

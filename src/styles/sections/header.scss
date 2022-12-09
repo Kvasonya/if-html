@@ -1,7 +1,7 @@
 .header {
   &__container {
     height: 8.5rem;
-    padding-top: 5rem;
+    padding-top: 5.7rem;
     @include flex_between;
     align-items: center;
     position: relative;
@@ -20,7 +20,7 @@
     position: relative;
   }
   &__menu-link {
-    height: 4rem;
+    height: 3rem;
     max-width: 11.8rem;
     padding-top: 0.2rem;
     color: var(--white);
@@ -63,7 +63,7 @@
       max-width: 3rem;
       max-height: 3.4rem;
       left: 26px;
-      top: -4px;
+      top: 0;
     }
     &_menu {
       display: none;

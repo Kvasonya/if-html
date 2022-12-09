@@ -9,12 +9,12 @@
 .markets__item-icon {
   cursor: pointer;
   &_google-play {
-    max-width: 13.5rem;
+    width: 13.5rem;
     max-height: 4rem;
   }
   &_app-store {
-    max-width: 11.7rem;
-    max-height: 3.8rem;
+    width: 11.7rem;
+    aspect-ratio: 3/1;
   }
 }
 

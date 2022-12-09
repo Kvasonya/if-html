@@ -3,8 +3,11 @@
   &__title {
     margin-bottom: var(--title-indent);
   }
+  &__container {
+    position: relative;
+  }
   &__slider {
-    grid-template-columns: repeat(3, var(--img-width-lg));
+    //grid-template-columns: repeat(3, var(--img-width-lg));
     margin-bottom: var(--delimiter-section);
     position: relative;
     &-buttons {
@@ -21,11 +24,13 @@
     }
     &-round-button {
       position: absolute;
-      left: calc(var(--container-width) - (var(--unit-sm)) * 2);
+      //left: calc(var(--container-width) - (var(--unit-sm)) * 2);
       top: calc(var(--img-width-lg) / 2);
+      z-index: 10;
     }
     &-content {
       width: var(--img-width-lg);
+      height: 100%;
       background-color: var(--bg-main);
       position: relative;
       &_img {
@@ -115,6 +120,7 @@
       width: 5.3rem;
       aspect-ratio: 1/1;
       color: var(--secondary-text);
+      border-radius: 50%;
     }
     &-account {
       height: 5.4rem;
@@ -132,6 +138,13 @@
         aspect-ratio: 4/3;
       }
     }
+  }
+  .reviews__slider-round-button-prev {
+    transform: translate(-75%, 0) rotate(180deg);
+  }
+  .reviews__slider-round-button-next {
+    overflow: visible;
+    left: calc(var(--container-width) - (var(--unit-sm)) * 2);
   }
 }
 
@@ -201,6 +214,7 @@
   .reviews {
     background-color: var(--bg-main);
     order: 5;
+    //padding-bottom: var(--delimiter-section);
     &__title {
       padding-top: var(--delimiter-section);
       margin-bottom: 3.2rem;
@@ -237,7 +251,7 @@
     &__hotel-info {
       height: auto;
       padding: 0;
-      margin-top: 1.2rem;
+      margin-top: 1rem;
       &-rating {
         gap: 0.4rem;
         &_score {
@@ -251,7 +265,7 @@
     &__user {
       &-info {
         margin: 1.2rem 0 1.2rem 0.4rem;
-        align-items: stretch;
+        //align-items: stretch;
       }
       &-account {
         padding-left: 1.2rem;
@@ -260,5 +274,17 @@
         width: 4.4rem;
       }
     }
+    &__swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+  .swiper-slide.reviews-swiper-slide-active {
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-pagination.reviews__swiper-pagination {
+    position: absolute;
+    bottom: 32px;
   }
 }

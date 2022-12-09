@@ -101,14 +101,14 @@
 
 ._label-destination {
   color: var(--white);
-  bottom: 9rem;
+  bottom: 8.3rem;
   left: 2.4rem;
 }
 
 ._label-check-in {
   color: var(--white);
-  bottom: 9rem;
-  left: 0.8rem;
+  bottom: 8.3rem;
+  left: 2rem;
   &:after {
     content: '—';
     position: absolute;
@@ -118,7 +118,7 @@
 
 ._label-check-out {
   color: var(--white);
-  bottom: 9rem;
+  bottom: 8.3rem;
   left: -2.4rem;
 }
 
@@ -169,7 +169,7 @@
     right: -1.3rem;
   }
   ._label-check-out {
-    bottom: 9rem;
+    bottom: 8.3rem;
     left: -1.5rem;
   }
   ._label-adults {
@@ -195,7 +195,7 @@
 @include tablet {
   .top-section {
     &__form-container {
-      margin-bottom: 2rem;
+      margin-bottom: 3.2rem;
       height: auto;
     }
     &__form-fieldset {
@@ -209,7 +209,7 @@
         width: 1.6rem;
         height: 1.6rem;
         display: block;
-        bottom: 1.4rem;
+        bottom: 1.8rem;
         left: 1.2rem;
       }
       &-label {
@@ -277,8 +277,8 @@
     line-height: 1.8rem;
     font-weight: var(--medium);
     color: var(--text-color);
-    bottom: 1.2rem;
-    left: 3.6rem;
+    bottom: 1.8rem;
+    left: 3.7rem;
   }
   ._label-check-in {
     bottom: 3rem;
@@ -339,23 +339,21 @@
     line-height: 1.8rem;
   }
   ._label-check-in {
-    bottom: 2.5rem;
     left: 1rem;
   }
   ._label-check-out {
-    bottom: 2.5rem;
     left: 1rem;
   }
   ._label-adults {
-    bottom: 2.7rem;
+    bottom: 3.3rem;
     left: 1.2rem;
   }
   ._label-children {
-    bottom: 2.7rem;
+    bottom: 3.3rem;
     left: 1.2rem;
   }
   ._label-rooms {
-    bottom: 2.7rem;
+    bottom: 3.3rem;
     left: 1.2rem;
   }
 }

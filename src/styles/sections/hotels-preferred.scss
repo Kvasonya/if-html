@@ -1,7 +1,7 @@
 .hotels-preferred {
   order: 3;
+  padding-bottom: var(--delimiter-section);
   &__container {
-    padding-bottom: var(--delimiter-section);
     position: relative;
   }
   &__title {
@@ -13,16 +13,30 @@
     position: relative;
     &-round-button {
       position: absolute;
-      left: calc(var(--container-width) - (var(--unit-sm) * 2));
+      //left: calc(var(--container-width) - (var(--unit-sm) * 2));
       top: calc(var(--img-width) / 2);
     }
   }
+}
+.hotels-preferred__slider-round-button-prev {
+  transform: translate(-50%, 0) rotate(180deg);
+  left: 0;
+}
+.hotels-preferred__slider-round-button-next {
+  overflow: visible;
+  left: calc(var(--container-width) - (var(--unit-sm)) * 2);
+  transform: translate(-50%, 0);
 }
 
 @include netbook {
   .hotels-preferred {
     &__title {
       margin-bottom: 6.5rem;
+    }
+    &__slider {
+      &-round-button-next {
+        left: calc(var(--container-width) - (var(--unit-sm)) * 3);
+      }
     }
   }
 }
@@ -31,6 +45,11 @@
   .hotels-preferred {
     &__title {
       margin-bottom: var(--delimiter-section);
+    }
+    &__slider {
+      &-round-button-next {
+        left: calc(var(--container-width) - (var(--unit-sm)) * 2.5);
+      }
     }
   }
 }
@@ -43,10 +62,41 @@
     &__slider {
       padding-bottom: var(--delimiter-section);
       &-round-button {
-        left: calc(var(--container-width) + 9%);
+        //left: calc(var(--container-width) + 9%);
+        transform: translate(-50%, 25%);
         width: 2.8rem;
         height: 2.8rem;
+        &-prev {
+          left: 0;
+          right: 0;
+          transform: translate(-50%, 25%) rotate(180deg);
+        }
+        &-next {
+          left: 100%;
+        }
       }
     }
+  }
+  .hotels-preferred__slider-round-button-next {
+    overflow: visible;
+    left: 100%;
+  }
+  .swiper-slide.hotels-preferred-swiper-slide {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .swiper-slide-active.hotels-preferred-swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .swiper-slide-next.hotels-preferred-swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+@include mobile-xs {
+  .swiper-slide-next.hotels-preferred-swiper-slide {
+    display: flex;
+    justify-content: flex-end;
   }
 }
